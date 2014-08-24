@@ -78,36 +78,24 @@ a {
 </td></tr>
 
 <tr>
-	<td><table><td class ="responsetd"><span class="section_title">{xl t="Constitutional"}</span><table>
+	<td><table><td class ="responsetd"><span class="section_title">{xl t="General"}</span><table>
 		<tr>
-			<td class="response_prompt">{xl t="Weight Change"}:</td>
-			<td class="response">{html_radios name="weight_change" options=$form->get_options() selected=$form->get_weight_change() separator=""}</td>
+			<td class="response_prompt">{xl t="Weight Loss"}:</td>
+			<td class="response">{html_radios name="weight_loss" options=$form->get_options() selected=$form->get_weight_loss() separator=""}</td>
 			<td class="response_prompt">{xl t="Weakness"}:</td>
 			<td class="response">{html_radios name="weakness" options=$form->get_options() selected=$form->get_weakness() separator=""}</td>
+		</tr>
+		<tr>
+			<td class="response_prompt">{xl t="Weight Gain"}:</td>
+			<td class="response">{html_radios name="weight_gain" options=$form->get_options() selected=$form->get_weight_gain() separator=""}</td>
+		</tr>
+		<tr>
 			<td class="response_prompt">{xl t="Fatigue"}:</td>
 			<td class="response">{html_radios name="fatigue" options=$form->get_options() selected=$form->get_fatigue() separator=""}</td>
 		</tr>
 		<tr>
-			<td class="response_prompt">{xl t="Anorexia"}:</td>
-			<td class="response">{html_radios name="anorexia" options=$form->get_options() selected=$form->get_anorexia() separator=""}</td>
-			<td class="response_prompt">{xl t="Fever"}:</td>
-			<td class="response">{html_radios name="fever" options=$form->get_options() selected=$form->get_fever() separator=""}</td>
-			<td class="response_prompt">{xl t="Chills"}:</td>
-			<td class="response">{html_radios name="chills" options=$form->get_options() selected=$form->get_chills() separator=""}</td>
-		</tr>
-		<tr>
-			<td class="response_prompt">{xl t="Night Sweats"}:</td>
-			<td class="response">{html_radios name="night_sweats" options=$form->get_options() selected=$form->get_night_sweats() separator=""}</td>
-			<td class="response_prompt">{xl t="Insomnia"}:</td>
-			<td class="response">{html_radios name="insomnia" options=$form->get_options() selected=$form->get_insomnia() separator=""}</td>
-			<td class="response_prompt">{xl t="Irritability"}:</td>
-			<td class="response">{html_radios name="irritability" options=$form->get_options() selected=$form->get_irritability() separator=""}</td>
-		</tr>
-		<tr>
-			<td class="response_prompt">{xl t="Heat or Cold"}:</td>
-			<td class="response">{html_radios name="heat_or_cold" options=$form->get_options() selected=$form->get_heat_or_cold() separator=""}</td>
-			<td class="response_prompt">{xl t="Intolerance"}:</td>
-			<td class="response">{html_radios name="intolerance" options=$form->get_options() selected=$form->get_intolerance() separator=""}</td>
+			<td class="response_prompt">{xl t="Sleep Problems"}:</td>
+			<td class="response">{html_radios name="sleep_problems" options=$form->get_options() selected=$form->get_sleep_problems() separator=""}</td>
 		</tr>
 </tr><td>
 	
@@ -156,8 +144,8 @@ a {
 		<tr>
 			<td class="response_prompt">{xl t="Hearing Loss"}:</td>
 			<td class="response">{html_radios name="hearing_loss" options=$form->get_options() selected=$form->get_hearing_loss() separator=""}</td>
-			<td class="response_prompt">{xl t="Discharge"}:</td>
-			<td class="response">{html_radios name="discharge" options=$form->get_options() selected=$form->get_discharge() separator=""}</td>
+			<td class="response_prompt">{xl t="Ear Drainage"}:</td>
+			<td class="response">{html_radios name="drainage" options=$form->get_options() selected=$form->get_discharge() separator=""}</td>
 			<td class="response_prompt">{xl t="Pain"}:</td>
 			<td class="response">{html_radios name="pain" options=$form->get_options() selected=$form->get_pain() separator=""}</td>
 		</tr>
@@ -279,13 +267,6 @@ a {
 			<td class="response_prompt">{xl t="Heart Problem"}:</td>
 			<td class="response">{html_radios name="heart_problem" options=$form->get_options() selected=$form->get_heart_problem() separator=""}</td>
 		</tr>
-</tr><td>
-	
-		
-	</td>
-</tr>
-
-	</table></td>
 </tr>
 <tr>
 	<td><table><td class ="responsetd"><span class="section_title">{xl t="Gastrointestinal"}</span><table>
@@ -333,110 +314,9 @@ a {
 			<td class="response_prompt">{xl t="Constipation"}:</td>
 			<td class="response">{html_radios name="constipation" options=$form->get_options() selected=$form->get_constipation() separator=""}</td>
 		</tr>
-</tr><td>
-	
-		
-	</td>
 </tr>
 
-	</table></td>
-</tr>
-<tr>
-	<td><table><td class ="responsetd"><span class="section_title">{xl t="Genitourinary"} {xl t="General"}</span><table>
-		<tr>
-			<td class="response_prompt">{xl t="Polyuria"}:</td>
-			<td class="response">{html_radios name="polyuria" options=$form->get_options() selected=$form->get_polyuria() separator=""}</td>
-			<td class="response_prompt">{xl t="Polydypsia"}:</td>
-			<td class="response">{html_radios name="polydypsia" options=$form->get_options() selected=$form->get_polydypsia() separator=""}</td>
-			<td class="response_prompt">{xl t="Dysuria"}:</td>
-			<td class="response">{html_radios name="dysuria" options=$form->get_options() selected=$form->get_dysuria() separator=""}</td>
-		</tr>
-		<tr>
-			<td class="response_prompt">{xl t="Hematuria"}:</td>
-			<td class="response">{html_radios name="hematuria" options=$form->get_options() selected=$form->get_hematuria() separator=""}</td>
-			<td class="response_prompt">{xl t="Frequency"}:</td>
-			<td class="response">{html_radios name="frequency" options=$form->get_options() selected=$form->get_frequency() separator=""}</td>
-			<td class="response_prompt">{xl t="Urgency"}:</td>
-			<td class="response">{html_radios name="urgency" options=$form->get_options() selected=$form->get_urgency() separator=""}</td>
-		</tr>
-		<tr>
-			<td class="response_prompt">{xl t="Incontinence"}:</td>
-			<td class="response">{html_radios name="incontinence" options=$form->get_options() selected=$form->get_incontinence() separator=""}</td>
-			<td class="response_prompt">{xl t="Renal Stones"}:</td>
-			<td class="response">{html_radios name="renal_stones" options=$form->get_options() selected=$form->get_renal_stones() separator=""}</td>
-			<td class="response_prompt">{xl t="UTIs"}:</td>
-			<td class="response">{html_radios name="utis" options=$form->get_options() selected=$form->get_utis() separator=""}</td>
-		</tr>
-</tr><td>
-	
-		
-	</td>
-</tr>
 
-	</table></td>
-</tr>
-<tr>
-	<td><table><td class ="responsetd"><span class="section_title">{xl t="Genitourinary"} {xl t="Male"}</span><table>
-		<tr>
-			<td class="response_prompt">{xl t="Hesitancy"}:</td>
-			<td class="response">{html_radios name="hesitancy" options=$form->get_options() selected=$form->get_hesitancy() separator=""}</td>
-			<td class="response_prompt">{xl t="Dribbling"}:</td>
-			<td class="response">{html_radios name="dribbling" options=$form->get_options() selected=$form->get_dribbling() separator=""}</td>
-			<td class="response_prompt">{xl t="Stream"}:</td>
-			<td class="response">{html_radios name="stream" options=$form->get_options() selected=$form->get_stream() separator=""}</td>
-		</tr>
-		<tr>
-			<td class="response_prompt">{xl t="Nocturia"}:</td>
-			<td class="response">{html_radios name="nocturia" options=$form->get_options() selected=$form->get_nocturia() separator=""}</td>
-			<td class="response_prompt">{xl t="Erections"}:</td>
-			<td class="response">{html_radios name="erections" options=$form->get_options() selected=$form->get_erections() separator=""}</td>
-			<td class="response_prompt">{xl t="Ejaculations"}:</td>
-			<td class="response">{html_radios name="ejaculations" options=$form->get_options() selected=$form->get_ejaculations() separator=""}</td>
-		</tr>
-</tr><td>	
-	</td>
-</tr>
-
-	</table></td>
-</tr>
-<tr>
-	<td><table><td class ="responsetd"><span class="section_title">{xl t="Genitourinary"} {xl t="Female"}</span><table>
-		<tr>
-			<td class="response_prompt">{xl t="Female G"}:</td>
-			<td class="response">{html_radios name="g" options=$form->get_options() selected=$form->get_g() separator=""}</td>
-			<td class="response_prompt">{xl t="Female P"}:</td>
-			<td class="response">{html_radios name="p" options=$form->get_options() selected=$form->get_p() separator=""}</td>
-			<td class="response_prompt">{xl t="Female AP"}:</td>
-			<td class="response">{html_radios name="ap" options=$form->get_options() selected=$form->get_ap() separator=""}</td>
-		</tr>
-		<tr>
-			<td class="response_prompt">{xl t="Female LC"}:</td>
-			<td class="response">{html_radios name="lc" options=$form->get_options() selected=$form->get_lc() separator=""}</td>
-			<td class="response_prompt">{xl t="Menarche"}:</td>
-			<td class="response">{html_radios name="mearche" options=$form->get_options() selected=$form->get_mearche() separator=""}</td>
-			<td class="response_prompt">{xl t="Menopause"}:</td>
-			<td class="response">{html_radios name="menopause" options=$form->get_options() selected=$form->get_menopause() separator=""}</td>
-		</tr>
-		<tr>
-			<td class="response_prompt">{xl t="LMP"}:</td>
-			<td class="response">{html_radios name="lmp" options=$form->get_options() selected=$form->get_lmp() separator=""}</td>
-			<td class="response_prompt">{xl t="Frequency"}:</td>
-			<td class="response">{html_radios name="f_frequency" options=$form->get_options() selected=$form->get_f_frequency() separator=""}</td>
-			<td class="response_prompt">{xl t="Flow"}:</td>
-			<td class="response">{html_radios name="f_flow" options=$form->get_options() selected=$form->get_f_flow() separator=""}</td>
-		</tr>
-		<tr>
-			<td class="response_prompt">{xl t="Symptoms"}:</td>
-			<td class="response">{html_radios name="f_symptoms" options=$form->get_options() selected=$form->get_f_symptoms() separator=""}</td>
-			<td class="response_prompt">{xl t="Abnormal Hair Growth"}:</td>
-			<td class="response">{html_radios name="abnormal_hair_growth" options=$form->get_options() selected=$form->get_abnormal_hair_growth() separator=""}</td>
-			<td class="response_prompt">{xl t="F/H Female Hirsutism/Striae"}:</td>
-			<td class="response">{html_radios name="f_hirsutism" options=$form->get_options() selected=$form->get_f_hirsutism() separator=""}</td>
-		</tr>
-</tr><td>
-	</td>
-</tr></table></td>
-</tr>
 <tr>
 	<td><table><td class ="responsetd"><span class="section_title">{xl t="Musculoskeletal"}</span><table>
 		<tr>

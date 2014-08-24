@@ -30,7 +30,7 @@ function ros_report( $pid, $encounter, $cols, $id) {
 	    if ($key == "Glaucoma History") { $key = "Glaucoma Family History"; }
 	    if ($key == "Irritation") { $key = "Eye Irritation"; }
 	    if ($key == "Redness") { $key = "Eye Redness"; }
-	    if ($key == "Discharge") { $key = "ENT Discharge"; }
+	    if ($key == "Drainage") { $key = "ENT Drainage"; }
 	    if ($key == "Pain") { $key = "ENT Pain"; }
 	    if ($key == "Biopsy") { $key = "Breast Biopsy"; }
 	    if ($key == "Hemoptsyis") { $key = "Hemoptysis"; }
@@ -39,22 +39,6 @@ function ros_report( $pid, $encounter, $cols, $id) {
 	    if ($key == "Doe") { $key = "DOE"; }
 	    if ($key == "Peripheal") { $key = "Peripheral"; }
 	    if ($key == "Legpain Cramping") { $key = "Leg Pain/Cramping"; }
-	    if ($key == "Frequency") { $key = "Urine Frequency"; }
-	    if ($key == "Urgency") { $key = "Urine Urgency"; }
-	    if ($key == "Utis") { $key = "UTIs"; }
-	    if ($key == "Hesitancy") { $key = "Urine Hesitancy"; }
-	    if ($key == "Dribbling") { $key = "Urine Dribbling"; }
-	    if ($key == "Stream") { $key = "Urine Stream"; }
-	    if ($key == "G") { $key = "Female G"; }
-	    if ($key == "P") { $key = "Female P"; }
-	    if ($key == "Lc") { $key = "Female LC"; }
-	    if ($key == "Ap") { $key = "Female AP"; }
-	    if ($key == "Mearche") { $key = "Menarche"; }
-	    if ($key == "Lmp") { $key = "LMP"; }
-	    if ($key == "F Frequency") { $key = "Menstrual Frequency"; }
-	    if ($key == "F Flow") { $key = "Menstrual Flow"; }
-	    if ($key == "F Symptoms") { $key = "Female Symptoms"; }
-	    if ($key == "F Hirsutism") { $key = "Hirsutism/Striae"; }
 	    if ($key == "Swelling") { $key = "Musc Swelling"; }
 	    if ($key == "M Redness") { $key = "Musc Redness"; }
 	    if ($key == "M Warm") { $key = "Musc Warm"; }

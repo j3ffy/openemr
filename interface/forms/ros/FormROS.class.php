@@ -28,17 +28,19 @@ class FormROS extends ORDataObject {
 	var $id;
 	var $date;
 	var $pid;
-	var $weight_change = "N/A";
+	// var $weight_change = "N/A";
+	var $weight_loss = "N/A";
+	var $weight_gain = "N/A";
 	var $weakness = "N/A";
 	var $fatigue = "N/A";
-	var $anorexia = "N/A";
-	var $fever = "N/A";
-	var $chills = "N/A";
-	var $night_sweats = "N/A";
-	var $insomnia = "N/A";
-	var $irritability = "N/A";
-	var $heat_or_cold = "N/A";
-	var $intolerance = "N/A";
+	// var $anorexia = "N/A";
+	// var $fever = "N/A";
+	// var $chills = "N/A";
+	// var $night_sweats = "N/A";
+	var $sleep_problems = "N/A";
+	// var $irritability = "N/A";
+	// var $heat_or_cold = "N/A";
+	// var $intolerance = "N/A";
 	var $change_in_vision = "N/A";
 	var $glaucoma_history = "N/A";
 	var $eye_pain = "N/A";
@@ -49,7 +51,7 @@ class FormROS extends ORDataObject {
 	var $blind_spots = "N/A";
 	var $photophobia = "N/A";
 	var $hearing_loss = "N/A";
-    var $discharge = "N/A";
+    var $drainage = "N/A";
     var $pain = "N/A";
     var $vertigo = "N/A";
     var $tinnitus = "N/A";
@@ -99,33 +101,33 @@ class FormROS extends ORDataObject {
 	var $changed_bowel = "N/A";
 	var $diarrhea = "N/A";
 	var $constipation = "N/A";
-	var $polyuria = "N/A";
-	var $polydypsia = "N/A";
-	var $dysuria = "N/A";
-	var $hematuria = "N/A";
-	var $frequency = "N/A";
-	var $urgency = "N/A";
-	var $incontinence = "N/A";
-	var $renal_stones = "N/A";
-	var $utis = "N/A";
-	var $hesitancy = "N/A";
-	var $dribbling = "N/A";
-	var $stream = "N/A";
-	var $nocturia = "N/A";
-	var $erections = "N/A";
-	var $ejaculations = "N/A";
-	var $g = "N/A";
-	var $p = "N/A";
-	var $ap = "N/A";
-	var $lc = "N/A";
-	var $mearche = "N/A";
-	var $menopause = "N/A";
-	var $lmp = "N/A";
-	var $f_frequency = "N/A";
-	var $f_flow = "N/A";
-	var $f_symptoms = "N/A";
-	var $abnormal_hair_growth = "N/A";
-	var $f_hirsutism = "N/A";
+	// var $polyuria = "N/A";
+	// var $polydypsia = "N/A";
+	// var $dysuria = "N/A";
+	// var $hematuria = "N/A";
+	// var $frequency = "N/A";
+	// var $urgency = "N/A";
+	// var $incontinence = "N/A";
+	// var $renal_stones = "N/A";
+	// var $utis = "N/A";
+	// var $hesitancy = "N/A";
+	// var $dribbling = "N/A";
+	// var $stream = "N/A";
+	// var $nocturia = "N/A";
+	// var $erections = "N/A";
+	// var $ejaculations = "N/A";
+	// var $g = "N/A";
+	// var $p = "N/A";
+	// var $ap = "N/A";
+	// var $lc = "N/A";
+	// var $mearche = "N/A";
+	// var $menopause = "N/A";
+	// var $lmp = "N/A";
+	// var $f_frequency = "N/A";
+	// var $f_flow = "N/A";
+	// var $f_symptoms = "N/A";
+	// var $abnormal_hair_growth = "N/A";
+	// var $f_hirsutism = "N/A";
 	var $joint_pain = "N/A";
 	var $swelling = "N/A";
 	var $m_redness = "N/A";
@@ -141,10 +143,10 @@ class FormROS extends ORDataObject {
 	var $tia = "N/A";
 	var $n_numbness = "N/A";
 	var $n_weakness = "N/A";
-	var $paralysis = "N/A";
-	var $intellectual_decline = "N/A";
-	var $memory_problems = "N/A";
-	var $dementia = "N/A";
+	// var $paralysis = "N/A";
+	// var $intellectual_decline = "N/A";
+	// var $memory_problems = "N/A";
+	// var $dementia = "N/A";
 	var $n_headache = "N/A";
 	var $s_cancer = "N/A";
 	var $psoriasis = "N/A";
@@ -219,12 +221,30 @@ class FormROS extends ORDataObject {
 		}	
 	}
 	
-	function get_weight_change(){
+	// function get_weight_change(){
+	// 	return $this->weight_change;
+	// }
+	// function set_weight_change($data){
+	// 	if(!empty($data)){
+	// 		$this->weight_change = $data;
+	// 	}
+	// }
+
+	function get_weight_loss(){
+		return $this->weight_loss;
+	}
+	function set_weight_loss($data){
+		if(!empty($data)){
+			$this->weight_loss = $data;
+		}
+	}
+	
+	function get_weight_gain(){
 		return $this->weight_change;
 	}
-	function set_weight_change($data){
+	function set_weight_gain($data){
 		if(!empty($data)){
-			$this->weight_change = $data;
+			$this->weight_gain = $data;
 		}
 	}
 	
@@ -246,77 +266,77 @@ class FormROS extends ORDataObject {
 		}
 	}
 	
-	function get_anorexia(){
-		return $this->anorexia;
+	// function get_anorexia(){
+	// 	return $this->anorexia;
+	// }
+	// function set_anorexia($data){
+	// 	if(!empty($data)){
+	// 		$this->anorexia = $data;
+	// 	}
+	// }
+	
+	// function get_fever(){
+	// 	return $this->fever;
+	// }
+	// function set_fever($data){
+	// 	if(!empty($data)){
+	// 		$this->fever = $data;
+	// 	}
+	// }
+	
+	// function get_chills(){
+	// 	return $this->chills;
+	// }
+	// function set_chills($data){
+	// 	if(!empty($data)){
+	// 		$this->chills = $data;
+	// 	}
+	// }
+	
+	// function get_night_sweats(){
+	// 	return $this->night_sweats;
+	// }
+	// function set_night_sweats($data){
+	// 	if(!empty($data)){
+	// 		$this->night_sweats = $data;
+	// 	}
+	// }
+	
+	function get_sleep_problems(){
+		return $this->sleep_problems;
 	}
-	function set_anorexia($data){
+	function set_sleep_problems($data){
 		if(!empty($data)){
-			$this->anorexia = $data;
+			$this->sleep_problems = $data;
 		}
 	}
 	
-	function get_fever(){
-		return $this->fever;
-	}
-	function set_fever($data){
-		if(!empty($data)){
-			$this->fever = $data;
-		}
-	}
+	// function get_irritability(){
+	// 	return $this->irritability;
+	// }
+	// function set_irritability($data){
+	// 	if(!empty($data)){
+	// 		$this->irritability = $data;
+	// 	}
+	// }
 	
-	function get_chills(){
-		return $this->chills;
-	}
-	function set_chills($data){
-		if(!empty($data)){
-			$this->chills = $data;
-		}
-	}
+	// function get_heat_or_cold(){
+	// 	return $this->heat_or_cold;
+	// }
+	// function set_heat_or_cold($data){
+	// 	if(!empty($data)){
+	// 		$this->heat_or_cold = $data;
+	// 	}
+	// }
 	
-	function get_night_sweats(){
-		return $this->night_sweats;
-	}
-	function set_night_sweats($data){
-		if(!empty($data)){
-			$this->night_sweats = $data;
-		}
-	}
-	
-	function get_insomnia(){
-		return $this->insomnia;
-	}
-	function set_insomnia($data){
-		if(!empty($data)){
-			$this->insomnia = $data;
-		}
-	}
-	
-	function get_irritability(){
-		return $this->irritability;
-	}
-	function set_irritability($data){
-		if(!empty($data)){
-			$this->irritability = $data;
-		}
-	}
-	
-	function get_heat_or_cold(){
-		return $this->heat_or_cold;
-	}
-	function set_heat_or_cold($data){
-		if(!empty($data)){
-			$this->heat_or_cold = $data;
-		}
-	}
-	
-	function get_intolerance(){
-		return $this->intolerance;
-	}
-	function set_intolerance($data){
-		if(!empty($data)){
-			$this->intolerance = $data;
-		}
-	}
+	// function get_intolerance(){
+	// 	return $this->intolerance;
+	// }
+	// function set_intolerance($data){
+	// 	if(!empty($data)){
+	// 		$this->intolerance = $data;
+	// 	}
+	// }
 	
 	function get_change_in_vision(){
 		return $this->change_in_vision;
@@ -399,10 +419,10 @@ class FormROS extends ORDataObject {
 			$this->hearing_loss = $data;
 		}
 	}
-	function get_discharge(){
-		return $this->discharge;
+	function get_drainage(){
+		return $this->drainage;
 	}
-	function set_discharge($data){
+	function set_drainage($data){
 		if(!empty($data)){
 			$this->discharge = $data;
 		}
@@ -673,224 +693,224 @@ class FormROS extends ORDataObject {
 		}
 	}
 	
-	function get_polyuria(){
-		return $this->polyuria;
-	}
-	function set_polyuria($data){
-		if(!empty($data)){
-			$this->polyuria = $data;
-		}
-	}
-	function get_polydypsia(){
-		return $this->polydypsia;
-	}
-	function set_polydypsia($data){
-		if(!empty($data)){
-			$this->polydypsia = $data;
-		}
-	}
-	function get_dysuria(){
-		return $this->dysuria;
-	}
-	function set_dysuria($data){
-		if(!empty($data)){
-			$this->dysuria = $data;
-		}
-	}
-	function get_hematuria(){
-		return $this->hematuria;
-	}
-	function set_hematuria($data){
-		if(!empty($data)){
-			$this->hematuria = $data;
-		}
-	}
-	function get_frequency(){
-		return $this->frequency;
-	}
-	function set_frequency($data){
-		if(!empty($data)){
-			$this->frequency = $data;
-		}
-	}
-	function get_urgency(){
-		return $this->urgency;
-	}
-	function set_urgency($data){
-		if(!empty($data)){
-			$this->urgency = $data;
-		}
-	}
-	function get_incontinence(){
-		return $this->incontinence;
-	}
-	function set_incontinence($data){
-		if(!empty($data)){
-			$this->incontinence = $data;
-		}
-	}
-	function get_renal_stones(){
-		return $this->renal_stones;
-	}
-	function set_renal_stones($data){
-		if(!empty($data)){
-			$this->renal_stones = $data;
-		}
-	}
-	function get_utis(){
-		return $this->utis;
-	}
-	function set_utis($data){
-		if(!empty($data)){
-			$this->utis = $data;
-		}
-	}
+	// function get_polyuria(){
+	// 	return $this->polyuria;
+	// }
+	// function set_polyuria($data){
+	// 	if(!empty($data)){
+	// 		$this->polyuria = $data;
+	// 	}
+	// }
+	// function get_polydypsia(){
+	// 	return $this->polydypsia;
+	// }
+	// function set_polydypsia($data){
+	// 	if(!empty($data)){
+	// 		$this->polydypsia = $data;
+	// 	}
+	// }
+	// function get_dysuria(){
+	// 	return $this->dysuria;
+	// }
+	// function set_dysuria($data){
+	// 	if(!empty($data)){
+	// 		$this->dysuria = $data;
+	// 	}
+	// }
+	// function get_hematuria(){
+	// 	return $this->hematuria;
+	// }
+	// function set_hematuria($data){
+	// 	if(!empty($data)){
+	// 		$this->hematuria = $data;
+	// 	}
+	// }
+	// function get_frequency(){
+	// 	return $this->frequency;
+	// }
+	// function set_frequency($data){
+	// 	if(!empty($data)){
+	// 		$this->frequency = $data;
+	// 	}
+	// }
+	// function get_urgency(){
+	// 	return $this->urgency;
+	// }
+	// function set_urgency($data){
+	// 	if(!empty($data)){
+	// 		$this->urgency = $data;
+	// 	}
+	// }
+	// function get_incontinence(){
+	// 	return $this->incontinence;
+	// }
+	// function set_incontinence($data){
+	// 	if(!empty($data)){
+	// 		$this->incontinence = $data;
+	// 	}
+	// }
+	// function get_renal_stones(){
+	// 	return $this->renal_stones;
+	// }
+	// function set_renal_stones($data){
+	// 	if(!empty($data)){
+	// 		$this->renal_stones = $data;
+	// 	}
+	// }
+	// function get_utis(){
+	// 	return $this->utis;
+	// }
+	// function set_utis($data){
+	// 	if(!empty($data)){
+	// 		$this->utis = $data;
+	// 	}
+	// }
 	
-	function get_hesitancy(){
-		return $this->hesitancy;
-	}
-	function set_hesitancy($data){
-		if(!empty($data)){
-			$this->hesitancy = $data;
-		}
-	}
-	function get_dribbling(){
-		return $this->dribbling;
-	}
-	function set_dribbling($data){
-		if(!empty($data)){
-			$this->dribbling = $data;
-		}
-	}
-	function get_stream(){
-		return $this->stream;
-	}
-	function set_stream($data){
-		if(!empty($data)){
-			$this->stream = $data;
-		}
-	}
-	function get_nocturia(){
-		return $this->nocturia;
-	}
-	function set_nocturia($data){
-		if(!empty($data)){
-			$this->nocturia = $data;
-		}
-	}
-	function get_erections(){
-		return $this->erections;
-	}
-	function set_erections($data){
-		if(!empty($data)){
-			$this->erections = $data;
-		}
-	}
-	function get_ejaculations(){
-		return $this->ejaculations;
-	}
-	function set_ejaculations($data){
-		if(!empty($data)){
-			$this->ejaculations = $data;
-		}
-	}
+	// function get_hesitancy(){
+	// 	return $this->hesitancy;
+	// }
+	// function set_hesitancy($data){
+	// 	if(!empty($data)){
+	// 		$this->hesitancy = $data;
+	// 	}
+	// }
+	// function get_dribbling(){
+	// 	return $this->dribbling;
+	// }
+	// function set_dribbling($data){
+	// 	if(!empty($data)){
+	// 		$this->dribbling = $data;
+	// 	}
+	// }
+	// function get_stream(){
+	// 	return $this->stream;
+	// }
+	// function set_stream($data){
+	// 	if(!empty($data)){
+	// 		$this->stream = $data;
+	// 	}
+	// }
+	// function get_nocturia(){
+	// 	return $this->nocturia;
+	// }
+	// function set_nocturia($data){
+	// 	if(!empty($data)){
+	// 		$this->nocturia = $data;
+	// 	}
+	// }
+	// function get_erections(){
+	// 	return $this->erections;
+	// }
+	// function set_erections($data){
+	// 	if(!empty($data)){
+	// 		$this->erections = $data;
+	// 	}
+	// }
+	// function get_ejaculations(){
+	// 	return $this->ejaculations;
+	// }
+	// function set_ejaculations($data){
+	// 	if(!empty($data)){
+	// 		$this->ejaculations = $data;
+	// 	}
+	// }
 		
-	function get_g(){
-		return $this->g;
-	}
-	function set_g($data){
-		if(!empty($data)){
-			$this->g = $data;
-		}
-	}
-	function get_p(){
-		return $this->p;
-	}
-	function set_p($data){
-		if(!empty($data)){
-			$this->p = $data;
-		}
-	}
-	function get_ap(){
-		return $this->ap;
-	}
-	function set_ap($data){
-		if(!empty($data)){
-			$this->ap = $data;
-		}
-	}
-	function get_lc(){
-		return $this->lc;
-	}
-	function set_lc($data){
-		if(!empty($data)){
-			$this->lc = $data;
-		}
-	}
-	function get_mearche(){
-		return $this->mearche;
-	}
-	function set_mearche($data){
-		if(!empty($data)){
-			$this->mearche = $data;
-		}
-	}
-	function get_menopause(){
-		return $this->menopause;
-	}
-	function set_menopause($data){
-		if(!empty($data)){
-			$this->menopause = $data;
-		}
-	}
-	function get_lmp(){
-		return $this->lmp;
-	}
-	function set_lmp($data){
-		if(!empty($data)){
-			$this->lmp = $data;
-		}
-	}
-	function get_f_frequency(){
-		return $this->f_frequency;
-	}
-	function set_f_frequency($data){
-		if(!empty($data)){
-			$this->f_frequency = $data;
-		}
-	}
-	function get_f_flow(){
-		return $this->f_flow;
-	}
-	function set_f_flow($data){
-		if(!empty($data)){
-			$this->f_flow = $data;
-		}
-	}
-	function get_f_symptoms(){
-		return $this->f_symptoms;
-	}
-	function set_f_symptoms($data){
-		if(!empty($data)){
-			$this->f_symptoms = $data;
-		}
-	}
-	function get_abnormal_hair_growth(){
-		return $this->abnormal_hair_growth;
-	}
-	function set_abnormal_hair_growth($data){
-		if(!empty($data)){
-			$this->abnormal_hair_growth = $data;
-		}
-	}
-	function get_f_hirsutism(){
-		return $this->f_hirsutism;
-	}
-	function set_f_hirsutism($data){
-		if(!empty($data)){
-			$this->f_hirsutism = $data;
-		}
-	}
+	// function get_g(){
+	// 	return $this->g;
+	// }
+	// function set_g($data){
+	// 	if(!empty($data)){
+	// 		$this->g = $data;
+	// 	}
+	// }
+	// function get_p(){
+	// 	return $this->p;
+	// }
+	// function set_p($data){
+	// 	if(!empty($data)){
+	// 		$this->p = $data;
+	// 	}
+	// }
+	// function get_ap(){
+	// 	return $this->ap;
+	// }
+	// function set_ap($data){
+	// 	if(!empty($data)){
+	// 		$this->ap = $data;
+	// 	}
+	// }
+	// function get_lc(){
+	// 	return $this->lc;
+	// }
+	// function set_lc($data){
+	// 	if(!empty($data)){
+	// 		$this->lc = $data;
+	// 	}
+	// }
+	// function get_mearche(){
+	// 	return $this->mearche;
+	// }
+	// function set_mearche($data){
+	// 	if(!empty($data)){
+	// 		$this->mearche = $data;
+	// 	}
+	// }
+	// function get_menopause(){
+	// 	return $this->menopause;
+	// }
+	// function set_menopause($data){
+	// 	if(!empty($data)){
+	// 		$this->menopause = $data;
+	// 	}
+	// }
+	// function get_lmp(){
+	// 	return $this->lmp;
+	// }
+	// function set_lmp($data){
+	// 	if(!empty($data)){
+	// 		$this->lmp = $data;
+	// 	}
+	// }
+	// function get_f_frequency(){
+	// 	return $this->f_frequency;
+	// }
+	// function set_f_frequency($data){
+	// 	if(!empty($data)){
+	// 		$this->f_frequency = $data;
+	// 	}
+	// }
+	// function get_f_flow(){
+	// 	return $this->f_flow;
+	// }
+	// function set_f_flow($data){
+	// 	if(!empty($data)){
+	// 		$this->f_flow = $data;
+	// 	}
+	// }
+	// function get_f_symptoms(){
+	// 	return $this->f_symptoms;
+	// }
+	// function set_f_symptoms($data){
+	// 	if(!empty($data)){
+	// 		$this->f_symptoms = $data;
+	// 	}
+	// }
+	// function get_abnormal_hair_growth(){
+	// 	return $this->abnormal_hair_growth;
+	// }
+	// function set_abnormal_hair_growth($data){
+	// 	if(!empty($data)){
+	// 		$this->abnormal_hair_growth = $data;
+	// 	}
+	// }
+	// function get_f_hirsutism(){
+	// 	return $this->f_hirsutism;
+	// }
+	// function set_f_hirsutism($data){
+	// 	if(!empty($data)){
+	// 		$this->f_hirsutism = $data;
+	// 	}
+	// }
 	
 	function get_joint_pain(){
 		return $this->joint_pain;
@@ -1013,38 +1033,38 @@ class FormROS extends ORDataObject {
 			$this->n_weakness = $data;
 		}
 	}
-	function get_paralysis(){
-		return $this->paralysis;
-	}
-	function set_paralysis($data){
-		if(!empty($data)){
-			$this->paralysis = $data;
-		}
-	}
-	function get_intellectual_decline(){
-		return $this->intellectual_decline;
-	}
-	function set_intellectual_decline($data){
-		if(!empty($data)){
-			$this->intellectual_decline = $data;
-		}
-	}
-	function get_memory_problems(){
-		return $this->memory_problems;
-	}
-	function set_memory_problems($data){
-		if(!empty($data)){
-			$this->memory_problems = $data;
-		}
-	}
-	function get_dementia(){
-		return $this->dementia;
-	}
-	function set_dementia($data){
-		if(!empty($data)){
-			$this->dementia = $data;
-		}
-	}
+	// function get_paralysis(){
+	// 	return $this->paralysis;
+	// }
+	// function set_paralysis($data){
+	// 	if(!empty($data)){
+	// 		$this->paralysis = $data;
+	// 	}
+	// }
+	// function get_intellectual_decline(){
+	// 	return $this->intellectual_decline;
+	// }
+	// function set_intellectual_decline($data){
+	// 	if(!empty($data)){
+	// 		$this->intellectual_decline = $data;
+	// 	}
+	// }
+	// function get_memory_problems(){
+	// 	return $this->memory_problems;
+	// }
+	// function set_memory_problems($data){
+	// 	if(!empty($data)){
+	// 		$this->memory_problems = $data;
+	// 	}
+	// }
+	// function get_dementia(){
+	// 	return $this->dementia;
+	// }
+	// function set_dementia($data){
+	// 	if(!empty($data)){
+	// 		$this->dementia = $data;
+	// 	}
+	// }
 	function get_n_headache(){
 		return $this->n_headache;
 	}

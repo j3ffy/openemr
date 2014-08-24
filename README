@@ -11,3 +11,17 @@ The setup documentation can be found in the INSTALL file and extensive
 documentation and forums can be found on the OpenEMR website at:
 http://www.open-emr.org
 
+What to change to modify the review of symptoms and review of symptoms checks:
+
+reviewofs = Review of Systems Checks
+ros = Review of Systems
+Below is a list of files that will need changed in each folder…
+reviewofs:
+* new.php = add/remove selection items
+* table.sql = add/remove selection items to save in table. You will also need to create these items in phpmyadmin
+* view.php = add/remove selection items (similar to new.php)
+ros:
+* FormROS.class.php = add/remove selection items
+* report.php = add/remove selection items
+* table.sql = add/remove selection items to save in table. You will also need to create these items in phpmyadmin
+* general_new.php = add/remove selection items and where/how they display (HTML)
