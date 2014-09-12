@@ -9,102 +9,102 @@
 	
     <manual>
 	   <section name="general" label="General">
-			<field name="weight_loss" label="Weight Loss" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="weight_gain" label="Weight Gain" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="fatigue" label="Fatigue" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="sleep_problems" label="Sleep Problems" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
+			<field name="weight_loss" label="Weight Loss" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="weight_gain" label="Weight Gain" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="fatigue" label="Fatigue" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="sleep_problems" label="Sleep Problems" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
 		</section>
 	
 		<section name="eyes" label="Eyes">
-			<field name="vision_changes" label="Change in Vision" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="blurry_vision" label="Blurry Vision" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="wear_glasses" label="Wear Glasses" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="floaters" label="Floaters" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="glaucoma" label="Glaucoma" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
+			<field name="vision_changes" label="Change in Vision" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="blurry_vision" label="Blurry Vision" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="wear_glasses" label="Wear Glasses" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="floaters" label="Floaters" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="glaucoma" label="Glaucoma" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
 		</section>
 		
 		<section name="ears" label="Ears">
-			<field name="hearing_loss" label="Hearing Loss" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="ringing" label="Ringing" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="roaring" label="Roaring" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="dizziness" label="Dizziness" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="vertigo" label="Vertigo" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="ear_pain" label="Ear Pain" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="ear_drainage" label="Ear Drainage" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="ear_surgery" label="Ear Surgery" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="ear_infections" label="Ear Infections" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
+			<field name="hearing_loss" label="Hearing Loss" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="ringing" label="Ringing" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="roaring" label="Roaring" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="dizziness" label="Dizziness" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="vertigo" label="Vertigo" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="ear_pain" label="Ear Pain" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="ear_drainage" label="Ear Drainage" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="ear_surgery" label="Ear Surgery" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="ear_infections" label="Ear Infections" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
 		</section>
 		
 		<section name="nose" label="Nose">
-			<field name="allergies" label="Allergies" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="congestion" label="Congestion" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="stuffiness" label="Stuffiness" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="sinus_pain" label="Pain" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="sinus_pressure" label="Pressure" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="sinus_surgery" label="Sinus Surgery" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="blocked_breathing" label="Blocked Breathing" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
+			<field name="allergies" label="Allergies" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="congestion" label="Congestion" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="stuffiness" label="Stuffiness" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="sinus_pain" label="Pain" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="sinus_pressure" label="Pressure" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="sinus_surgery" label="Sinus Surgery" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="blocked_breathing" label="Blocked Breathing" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
 		</section>
 		
 		<section name="throat" label="Throat">
-			<field name="hoarseness" label="Hoarseness" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="dryness" label="Dryness" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="voice_fatigue" label="Voice Fatigue" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="frequent_throat_clearing" label="Frequent Throat Clearing" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="increased_phlegm" label="Increased Phlegm" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="post_nasal_drip" label="Post Nasal Drip" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
+			<field name="hoarseness" label="Hoarseness" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="dryness" label="Dryness" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="voice_fatigue" label="Voice Fatigue" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="frequent_throat_clearing" label="Frequent Throat Clearing" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="increased_phlegm" label="Increased Phlegm" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="post_nasal_drip" label="Post Nasal Drip" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
 		</section>
 		<section name="face" label="Face">
-			<field name="face_pain" label="Pain" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="face_numbness" label="Numbness" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="twitching" label="Twitching" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="face_weakness" label="Weakness" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="lopsided" label="Lopsided" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
+			<field name="face_pain" label="Pain" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="face_numbness" label="Numbness" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="twitching" label="Twitching" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="face_weakness" label="Weakness" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="lopsided" label="Lopsided" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
 		</section>
 		<section name="neck" label="Neck">
-			<field name="neck_pain" label="Pain" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="mass" label="Mass" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="lump" label="Lump" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="goiter" label="Goiter" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="spine_surgery" label="Spine Surgery" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="decreased_mobility" label="Decreased Mobility" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="noisy_breathing" label="Noisy Breathing" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
+			<field name="neck_pain" label="Pain" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="mass" label="Mass" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="lump" label="Lump" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="goiter" label="Goiter" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="spine_surgery" label="Spine Surgery" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="decreased_mobility" label="Decreased Mobility" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="noisy_breathing" label="Noisy Breathing" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
 		</section>
 		<section name="neuro" label="Neuro">
-			<field name="headache" label="Headache" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="numbness" label="Numbness" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="weakness" label="Weakness" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="walking_problems" label="Walking Problems" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
+			<field name="headache" label="Headache" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="numbness" label="Numbness" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="weakness" label="Weakness" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="walking_problems" label="Walking Problems" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
 		</section>
 		<section name="heart" label="Heart">
-			<field name="chest_pain" label="Chest Pain" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="heart_attack" label="Heart Attack" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="heart_failure" label="Heart Failure" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="abnormal_rhythm" label="Abnormal Rhythm" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
+			<field name="chest_pain" label="Chest Pain" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="heart_attack" label="Heart Attack" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="heart_failure" label="Heart Failure" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="abnormal_rhythm" label="Abnormal Rhythm" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
 		</section>
 		<section name="lungs" label="Lungs">
-			<field name="breathing_changes" label="Breathing Changes" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="asthma" label="Asthma" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="copd" label="COPD" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="smoking" label="Smoking" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="cough" label="Cough" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
+			<field name="breathing_changes" label="Breathing Changes" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="asthma" label="Asthma" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="copd" label="COPD" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="smoking" label="Smoking" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="cough" label="Cough" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
 		</section>
 		<section name="gi" label="Gastrointestinal">
-			<field name="stomach_pain" label="Stomach Pain" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="diarrhea" label="Diarrhea" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="constipation" label="Constipation" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="nausea" label="Nausea" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="vomiting" label="Vomiting" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="cramping" label="Cramping" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="appetite_changes" label="Appetite Changes" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
+			<field name="stomach_pain" label="Stomach Pain" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="diarrhea" label="Diarrhea" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="constipation" label="Constipation" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="nausea" label="Nausea" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="vomiting" label="Vomiting" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="cramping" label="Cramping" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="appetite_changes" label="Appetite Changes" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
 		</section>
 		<section name="immune_system" label="Immune System">
-			<field name="abnormal_lymph_nodes" label="Abnormal Lymph Nodes" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="rheumatoid_arthritis" label="Rheumatoid Arthritis" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="lupus" label="Lupus" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="sjogrens" label="Sjogren\'s" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="wegeners" label="Wegener\'s" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="psoriasis" label="Psoriasis" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
-			<field name="osteoarthritis" label="Osteoarthritis" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="1"/>
+			<field name="abnormal_lymph_nodes" label="Abnormal Lymph Nodes" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="rheumatoid_arthritis" label="Rheumatoid Arthritis" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="lupus" label="Lupus" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="sjogrens" label="Sjogren\'s" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="wegeners" label="Wegener\'s" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="psoriasis" label="Psoriasis" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
+			<field name="osteoarthritis" label="Osteoarthritis" type="checkbox_list" list="NA_Yes_No" hoverover="" labelcols="1" cols="3"/>
 		</section>
 		
 	</manual>
