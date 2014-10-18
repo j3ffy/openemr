@@ -273,11 +273,11 @@ foreach($sections as $section):
 			<td class="response">
 			<?php
 			if($section['fields'][$i]['type'] == 'radio'):
+				foreach($radioOptions as $optVal => $optLabel):
 			?>
-				<label><input type="radio" name="<?php echo $section['fields'][$i]['name'];?>" value="N/A" checked="checked" />N/A</label>
-				<label><input type="radio" name="<?php echo $section['fields'][$i]['name'];?>" value="YES" />YES</label>
-				<label><input type="radio" name="<?php echo $section['fields'][$i]['name'];?>" value="NO" />NO</label>
+					<label><input type="radio" name="<?php echo $section['fields'][$i]['name'];?>" value="<?php echo $optVal;?>" /><?php echo $optLabel;?></label>
 			<?php
+				endforeach;
 			else:
 			?>	
 			<?php
