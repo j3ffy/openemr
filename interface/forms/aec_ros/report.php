@@ -14,6 +14,7 @@ require_once($GLOBALS['srcdir'].'/options.inc.php');
 require_once("aec_ros_options.inc.php");
 
 function aec_ros_report( $pid, $encounter, $cols, $id) {
+	$table_name = 'form_aec_ros';
     $count = 0;
 
 /* an array of the lists the fields may draw on. */

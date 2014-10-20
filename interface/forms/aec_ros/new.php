@@ -133,10 +133,12 @@ foreach($sections as $section):
 			<td class="response">
 			<?php
 			if($section['fields'][$i]['type'] == 'radio'):
+				$optCount = 0;
 				foreach($radioOptions as $optVal => $optLabel):
 			?>
-					<label><input type="radio" name="<?php echo $section['fields'][$i]['name'];?>" value="<?php echo $optVal;?>" /><?php echo $optLabel;?></label>
+					<label><input type="radio" name="<?php echo $section['fields'][$i]['name'];?>" value="<?php echo $optVal;?>" <?php echo ($optCount == 0)?('checked="checked"'):('');?>/><?php echo $optLabel;?></label>
 			<?php
+					$optCount++;
 				endforeach;
 			else:
 			?>	
