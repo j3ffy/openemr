@@ -9,15 +9,8 @@ require_once('../../globals.php');
 require_once($GLOBALS['srcdir'].'/api.inc');
 /* for generate_form_field, ?? */
 require_once($GLOBALS['srcdir'].'/options.inc.php');
-
-/** CHANGE THIS - name of the database table associated with this form **/
-$table_name = 'form_aec_ros';
-
-/** CHANGE THIS name to the name of your form. **/
-$form_name = 'Ashford Review of Symptoms Checks';
-
-/** CHANGE THIS to match the folder you created for this form. **/
-$form_folder = 'aec_ros';
+/* Variables/settings common to all views included here*/
+require_once("aec_ros_options.inc.php");
 
 /* Check the access control lists to ensure permissions to this page */
 if (!acl_check('patients', 'med')) {
@@ -77,118 +70,63 @@ $returnurl = $GLOBALS['concurrent_layout'] ? 'encounter_top.php' : 'patient_enco
 <fieldset>
 
 <!-- display the form's manual based fields -->
-<table>
+<?php
+foreach($sections as $section):
+	$fieldCount = count($section['fields']);
+	$sectionRows = ceil($fieldCount/$sectionCols);
+?>
+<table class="section">
 	<tr>
-		<td valign="top">
-			<span class="bold"><?php xl('General','e'); ?></span><br>
-			<input type=checkbox name="weight_loss"  <?php if ($obj{"weight_loss"} == "on") {echo "checked";};?>><span class="text"><?php xl('Weight Loss','e'); ?></span><br>
-			<input type=checkbox name="weight_gain"  <?php if ($obj{"weight_gain"} == "on") {echo "checked";};?>><span class="text"><?php xl('Weight Gain','e'); ?></span><br>
-			<input type=checkbox name="fatigue"  <?php if ($obj{"fatigue"} == "on") {echo "checked";};?>><span class="text"><?php xl('Fatigue','e'); ?></span><br>
-			<input type=checkbox name="sleep_problems"  <?php if ($obj{"sleep_problems"} == "on") {echo "checked";};?>><span class="text"><?php xl('Sleep Problems','e'); ?></span><br>
-		</td>
-		<td valign="top">
-			<span class="bold"><?php xl('Eyes','e'); ?></span><br>
-			<input type=checkbox name="vision_changes"  <?php if ($obj{"vision_changes"} == "on") {echo "checked";};?>><span class="text"><?php xl('Change in Vision','e'); ?></span><br>
-			<input type=checkbox name="blurry_vision"  <?php if ($obj{"blurry_vision"} == "on") {echo "checked";};?>><span class="text"><?php xl('Blurry Vision','e'); ?></span><br>
-			<input type=checkbox name="wear_glasses"  <?php if ($obj{"wear_glasses"} == "on") {echo "checked";};?>><span class="text"><?php xl('Wear Glasses','e'); ?></span><br>
-			<input type=checkbox name="floaters"  <?php if ($obj{"floaters"} == "on") {echo "checked";};?>><span class="text"><?php xl('Floaters','e'); ?></span><br>
-			<input type=checkbox name="glaucoma"  <?php if ($obj{"glaucoma"} == "on") {echo "checked";};?>><span class="text"><?php xl('Glaucoma','e'); ?></span><br>
-		</td>
-		<td valign="top">
-			<span class="bold"><?php xl('Ears','e'); ?></span><br>
-			<input type=checkbox name="hearing_loss"  <?php if ($obj{"hearing_loss"} == "on") {echo "checked";};?>><span class="text"><?php xl('Hearing Loss','e'); ?></span><br>
-			<input type=checkbox name="ringing"  <?php if ($obj{"ringing"} == "on") {echo "checked";};?>><span class="text"><?php xl('Ringing','e'); ?></span><br>
-			<input type=checkbox name="roaring"  <?php if ($obj{"roaring"} == "on") {echo "checked";};?>><span class="text"><?php xl('Roaring','e'); ?></span><br>
-			<input type=checkbox name="dizziness"  <?php if ($obj{"dizziness"} == "on") {echo "checked";};?>><span class="text"><?php xl('Dizziness','e'); ?></span><br>
-			<input type=checkbox name="vertigo"  <?php if ($obj{"vertigo"} == "on") {echo "checked";};?>><span class="text"><?php xl('Vertigo','e'); ?></span><br>
-			<input type=checkbox name="ear_pain"  <?php if ($obj{"ear_pain"} == "on") {echo "checked";};?>><span class="text"><?php xl('Ear Pain','e'); ?></span><br>
-			<input type=checkbox name="ear_drainage"  <?php if ($obj{"ear_drainage"} == "on") {echo "checked";};?>><span class="text"><?php xl('Ear Drainage','e'); ?></span><br>
-			<input type=checkbox name="ear_surgery"  <?php if ($obj{"ear_surgery"} == "on") {echo "checked";};?>><span class="text"><?php xl('Ear Surgery','e'); ?></span><br>
-			<input type=checkbox name="ear_infections"  <?php if ($obj{"ear_infections"} == "on") {echo "checked";};?>><span class="text"><?php xl('Ear Infections','e'); ?></span><br>
-		</td>
-		<td valign="top">
-			<span class="bold"><?php xl('Nose','e'); ?></span><br>
-			<input type=checkbox name="allergies"  <?php if ($obj{"allergies"} == "on") {echo "checked";};?>><span class="text"><?php xl('Allergies','e'); ?></span><br>
-			<input type=checkbox name="congestion"  <?php if ($obj{"congestion"} == "on") {echo "checked";};?>><span class="text"><?php xl('Congestion','e'); ?></span><br>
-			<input type=checkbox name="stuffiness"  <?php if ($obj{"stuffiness"} == "on") {echo "checked";};?>><span class="text"><?php xl('Stuffiness','e'); ?></span><br>
-			<input type=checkbox name="sinus_pain"  <?php if ($obj{"sinus_pain"} == "on") {echo "checked";};?>><span class="text"><?php xl('Pain','e'); ?></span><br>
-			<input type=checkbox name="sinus_pressure"  <?php if ($obj{"sinus_pressure"} == "on") {echo "checked";};?>><span class="text"><?php xl('Pressure','e'); ?></span><br>
-			<input type=checkbox name="sinus_surgery"  <?php if ($obj{"sinus_surgery"} == "on") {echo "checked";};?>><span class="text"><?php xl('Sinus Surgery','e'); ?></span><br>
-			<input type=checkbox name="blocked_breathing"  <?php if ($obj{"blocked_breathing"} == "on") {echo "checked";};?>><span class="text"><?php xl('Blocked Breathing','e'); ?></span><br>
-		</td>
-		<td valign="top">
-			<span class="bold"><?php xl('Throat','e'); ?></span><br>
-			<input type=checkbox name="hoarseness"  <?php if ($obj{"hoarseness"} == "on") {echo "checked";};?>><span class="text"><?php xl('Hoarseness','e'); ?></span><br>
-			<input type=checkbox name="dryness"  <?php if ($obj{"dryness"} == "on") {echo "checked";};?>><span class="text"><?php xl('Dryness','e'); ?></span><br>
-			<input type=checkbox name="voice_fatigue"  <?php if ($obj{"voice_fatigue"} == "on") {echo "checked";};?>><span class="text"><?php xl('Voice Fatigue','e'); ?></span><br>
-			<input type=checkbox name="frequent_throat_clearing"  <?php if ($obj{"frequent_throat_clearing"} == "on") {echo "checked";};?>><span class="text"><?php xl('Frequent Throat Clearing','e'); ?></span><br>
-			<input type=checkbox name="increased_phlegm"  <?php if ($obj{"increased_phlegm"} == "on") {echo "checked";};?>><span class="text"><?php xl('Increased Phlegm','e'); ?></span><br>
-			<input type=checkbox name="post_nasal_drip"  <?php if ($obj{"post_nasal_drip"} == "on") {echo "checked";};?>><span class="text"><?php xl('Post Nasal Drip','e'); ?></span><br>
-		</td>
-		<td valign="top">
-			<span class="bold"><?php xl('Face','e'); ?></span><br>
-			<input type=checkbox name="face_pain"  <?php if ($obj{"face_pain"} == "on") {echo "checked";};?>><span class="text"><?php xl('Pain','e'); ?></span><br>
-			<input type=checkbox name="face_numbness"  <?php if ($obj{"face_numbness"} == "on") {echo "checked";};?>><span class="text"><?php xl('Numbness','e'); ?></span><br>
-			<input type=checkbox name="twitching"  <?php if ($obj{"twitching"} == "on") {echo "checked";};?>><span class="text"><?php xl('Twitching','e'); ?></span><br>
-			<input type=checkbox name="face_weakness"  <?php if ($obj{"face_weakness"} == "on") {echo "checked";};?>><span class="text"><?php xl('Weakness','e'); ?></span><br>
-			<input type=checkbox name="lopsided"  <?php if ($obj{"lopsided"} == "on") {echo "checked";};?>><span class="text"><?php xl('Lopsided','e'); ?></span><br>
-		</td>
+		<td><span class="sectionlabel"><?php echo $section['name'];?></span></td>
 	</tr>
+	<?php
+	$i = 0;
+	for($r = 0; $r < $sectionRows; $r++):
+	?>
 	<tr>
-		<td valign="top">
-			<span class="bold"><?php xl('Neck','e'); ?></span><br>
-			<input type=checkbox name="neck_pain"  <?php if ($obj{"neck_pain"} == "on") {echo "checked";};?>><span class="text"><?php xl('Pain','e'); ?></span><br>
-			<input type=checkbox name="mass"  <?php if ($obj{"mass"} == "on") {echo "checked";};?>><span class="text"><?php xl('Mass','e'); ?></span><br>
-			<input type=checkbox name="lump"  <?php if ($obj{"lump"} == "on") {echo "checked";};?>><span class="text"><?php xl('Lump','e'); ?></span><br>
-			<input type=checkbox name="goiter"  <?php if ($obj{"goiter"} == "on") {echo "checked";};?>><span class="text"><?php xl('Goiter','e'); ?></span><br>
-			<input type=checkbox name="spine_surgery"  <?php if ($obj{"spine_surgery"} == "on") {echo "checked";};?>><span class="text"><?php xl('Spine Surgery','e'); ?></span><br>
-			<input type=checkbox name="decreased_mobility"  <?php if ($obj{"decreased_mobility"} == "on") {echo "checked";};?>><span class="text"><?php xl('Decreased Mobility','e'); ?></span><br>
-			<input type=checkbox name="noisy_breathing"  <?php if ($obj{"noisy_breathing"} == "on") {echo "checked";};?>><span class="text"><?php xl('Noisy Breathing','e'); ?></span><br>
-		</td>
-		<td valign="top">
-			<span class="bold"><?php xl('Neuro','e'); ?></span><br>
-			<input type=checkbox name="headache"  <?php if ($obj{"headache"} == "on") {echo "checked";};?>><span class="text"><?php xl('Headache','e'); ?></span><br>
-			<input type=checkbox name="numbness"  <?php if ($obj{"numbness"} == "on") {echo "checked";};?>><span class="text"><?php xl('Numbness','e'); ?></span><br>
-			<input type=checkbox name="weakness"  <?php if ($obj{"weakness"} == "on") {echo "checked";};?>><span class="text"><?php xl('Weakness','e'); ?></span><br>
-			<input type=checkbox name="walking_problems"  <?php if ($obj{"walking_problems"} == "on") {echo "checked";};?>><span class="text"><?php xl('Walking Problems','e'); ?></span><br>
-		</td>
-		<td valign="top">
-			<span class="bold"><?php xl('Heart','e'); ?></span><br>
-			<input type=checkbox name="chest_pain"  <?php if ($obj{"chest_pain"} == "on") {echo "checked";};?>><span class="text"><?php xl('Chest Pain','e'); ?></span><br>
-			<input type=checkbox name="heart_attack"  <?php if ($obj{"heart_attack"} == "on") {echo "checked";};?>><span class="text"><?php xl('Heart Attack','e'); ?></span><br>
-			<input type=checkbox name="heart_failure"  <?php if ($obj{"heart_failure"} == "on") {echo "checked";};?>><span class="text"><?php xl('Heart Failure','e'); ?></span><br>
-			<input type=checkbox name="abnormal_rhythm"  <?php if ($obj{"abnormal_rhythm"} == "on") {echo "checked";};?>><span class="text"><?php xl('Abnormal Rhythm','e'); ?></span><br>
-		</td>
-		<td valign="top">
-			<span class="bold"><?php xl('Lungs','e'); ?></span><br>
-			<input type=checkbox name="breathing_changes"  <?php if ($obj{"breathing_changes"} == "on") {echo "checked";};?>><span class="text"><?php xl('Breathing Changes','e'); ?></span><br>
-			<input type=checkbox name="asthma"  <?php if ($obj{"asthma"} == "on") {echo "checked";};?>><span class="text"><?php xl('Asthma','e'); ?></span><br>
-			<input type=checkbox name="copd"  <?php if ($obj{"copd"} == "on") {echo "checked";};?>><span class="text"><?php xl('COPD','e'); ?></span><br>
-			<input type=checkbox name="smoking"  <?php if ($obj{"smoking"} == "on") {echo "checked";};?>><span class="text"><?php xl('Smoking','e'); ?></span><br>
-			<input type=checkbox name="cough"  <?php if ($obj{"cough"} == "on") {echo "checked";};?>><span class="text"><?php xl('Cough','e'); ?></span><br>
-		</td>
-		<td valign="top">
-			<span class="bold"><?php xl('Gastrointestinal','e'); ?></span><br>
-			<input type=checkbox name="stomach_pain"  <?php if ($obj{"stomach_pain"} == "on") {echo "checked";};?>><span class="text"><?php xl('Stomach Pain','e'); ?></span><br>
-			<input type=checkbox name="diarrhea"  <?php if ($obj{"diarrhea"} == "on") {echo "checked";};?>><span class="text"><?php xl('Diarrhea','e'); ?></span><br>
-			<input type=checkbox name="constipation"  <?php if ($obj{"constipation"} == "on") {echo "checked";};?>><span class="text"><?php xl('Constipation','e'); ?></span><br>
-			<input type=checkbox name="nausea"  <?php if ($obj{"nausea"} == "on") {echo "checked";};?>><span class="text"><?php xl('Nausea','e'); ?></span><br>
-			<input type=checkbox name="vomiting"  <?php if ($obj{"vomiting"} == "on") {echo "checked";};?>><span class="text"><?php xl('Vomiting','e'); ?></span><br>
-			<input type=checkbox name="cramping"  <?php if ($obj{"cramping"} == "on") {echo "checked";};?>><span class="text"><?php xl('Cramping','e'); ?></span><br>
-			<input type=checkbox name="appetite_changes"  <?php if ($obj{"appetite_changes"} == "on") {echo "checked";};?>><span class="text"><?php xl('Appetite Changes','e'); ?></span><br>
-		</td>
-		<td valign="top">
-			<span class="bold"><?php xl('Immune System','e'); ?></span><br>
-			<input type=checkbox name="abnormal_lymph_nodes"  <?php if ($obj{"abnormal_lymph_nodes"} == "on") {echo "checked";};?>><span class="text"><?php xl('Abnormal Lymph Nodes','e'); ?></span><br>
-			<input type=checkbox name="rheumatoid_arthritis"  <?php if ($obj{"rheumatoid_arthritis"} == "on") {echo "checked";};?>><span class="text"><?php xl('Rheumatoid Arthritis','e'); ?></span><br>
-			<input type=checkbox name="lupus"  <?php if ($obj{"lupus"} == "on") {echo "checked";};?>><span class="text"><?php xl('Lupus','e'); ?></span><br>
-			<input type=checkbox name="sjogrens"  <?php if ($obj{"sjogrens"} == "on") {echo "checked";};?>><span class="text"><?php xl('Sjogren\'s','e'); ?></span><br>
-			<input type=checkbox name="wegeners"  <?php if ($obj{"wegeners"} == "on") {echo "checked";};?>><span class="text"><?php xl('Wegener\'s','e'); ?></span><br>
-			<input type=checkbox name="psoriasis"  <?php if ($obj{"psoriasis"} == "on") {echo "checked";};?>><span class="text"><?php xl('Psoriasis','e'); ?></span><br>
-			<input type=checkbox name="osteoarthritis"  <?php if ($obj{"osteoarthritis"} == "on") {echo "checked";};?>><span class="text"><?php xl('Osteoarthritis','e'); ?></span><br>
-		</td>
+		<?php
+		for($c = 0; $c < $sectionCols; $c++):
+		?>
+		<?php
+		if($i < $fieldCount):
+		?>
+			<td class="response_prompt"><?php echo $section['fields'][$i]['label'];?>:</td>
+			<td class="response">
+			<?php
+			if($section['fields'][$i]['type'] == 'radio'):
+				foreach($radioOptions as $optVal => $optLabel):
+			?>
+				<label><input type="radio" name="<?php echo $section['fields'][$i]['name'];?>" value="<?php echo $optVal;?>" <?php echo ($optVal == $obj{$section['fields'][$i]['name']})?(' checked="checked"'):('');?>/><?php echo $optLabel;?></label>
+			<?php
+				endforeach;
+			else:
+			?>	
+			<?php
+			endif;
+			?>
+			</td>
+			<?php
+			$i++;
+			?>
+		<?php
+		else:
+		?>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		<?php
+		endif;
+		?>
+		<?php
+		endfor;
+		?>
 	</tr>
+	<?php
+	endfor;
+	?>
 </table>
+<?php
+endforeach;
+?>
 
 </fieldset>
 </div><!-- end print_form_container -->
