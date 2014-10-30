@@ -7,131 +7,131 @@ $sections = array(
 	array(
 		'name' => 'General',
 		'fields' => array(
-			array('name' => 'weight_loss', 'label' => 'Weight Loss', 'type' => 'radio'),
-			array('name' => 'weight_gain', 'label' => 'Weight Gain', 'type' => 'radio'),
-			array('name' => 'fatigue', 'label' => 'Fatigue', 'type' => 'radio'),
-			array('name' => 'sleep_problems', 'label' => 'Sleep Problems', 'type' => 'radio')
+			array('name' => 'weight_loss', 'drlabel' => 'Weight Loss', 'label' => 'Weight Loss', 'type' => 'radio'),
+			array('name' => 'weight_gain', 'drlabel' => 'Weight Gain', 'label' => 'Weight Gain', 'type' => 'radio'),
+			array('name' => 'fatigue', 'drlabel' => 'Fatigue', 'label' => 'Fatigue', 'type' => 'radio'),
+			array('name' => 'sleep_problems', 'drlabel' => 'Sleep Problems', 'label' => 'Sleep Problems', 'type' => 'radio')
 		)
 	),
 	array(
 		'name' => 'Eyes',
 		'fields' => array(
-			array('name' => 'vision_changes', 'label' => 'Changes in Vision', 'type' => 'radio'),
-			array('name' => 'blurry_vision', 'label' => 'Blurry Vision', 'type' => 'radio'),
-			array('name' => 'wear_glasses', 'label' => 'Wear Glasses', 'type' => 'radio'),
-			array('name' => 'floaters', 'label' => 'Floaters', 'type' => 'radio'),
-			array('name' => 'glaucoma', 'label' => 'Glaucoma', 'type' => 'radio')
+			array('name' => 'vision_changes', 'drlabel' => 'Changes in Vision', 'label' => 'Changes in Vision', 'type' => 'radio'),
+			array('name' => 'blurry_vision', 'drlabel' => 'Blurry Vision', 'label' => 'Blurry Vision', 'type' => 'radio'),
+			array('name' => 'wear_glasses', 'drlabel' => 'Wear Glasses', 'label' => 'Wear Glasses', 'type' => 'radio'),
+			array('name' => 'floaters', 'drlabel' => 'Floaters', 'label' => 'Floaters', 'type' => 'radio'),
+			array('name' => 'glaucoma', 'drlabel' => 'Glaucoma', 'label' => 'Glaucoma', 'type' => 'radio')
 		)
 	),
 	array(
 		'name' => 'Ears',
 		'fields' => array(
-			array('name' => 'hearing_loss', 'label' => 'Hearing Loss', 'type' => 'radio'),
-			array('name' => 'ringing', 'label' => 'Ringing', 'type' => 'radio'),
-			array('name' => 'roaring', 'label' => 'Roaring', 'type' => 'radio'),
-			array('name' => 'dizziness', 'label' => 'Dizziness', 'type' => 'radio'),
-			array('name' => 'vertigo', 'label' => 'Vertigo', 'type' => 'radio'),
-			array('name' => 'ear_pain', 'label' => 'Ear Pain', 'type' => 'radio'),
-			array('name' => 'ear_drainage', 'label' => 'Ear Drainage', 'type' => 'radio'),
-			array('name' => 'ear_surgery', 'label' => 'Ear Surgery', 'type' => 'radio'),
-			array('name' => 'ear_infections', 'label' => 'Ear Infections', 'type' => 'radio')
+			array('name' => 'hearing_loss', 'drlabel' => 'Hearing Loss', 'label' => 'Hearing Loss', 'type' => 'radio'),
+			array('name' => 'ringing', 'drlabel' => 'Ringing', 'label' => 'Ringing', 'type' => 'radio'),
+			array('name' => 'roaring', 'drlabel' => 'Roaring', 'label' => 'Roaring', 'type' => 'radio'),
+			array('name' => 'dizziness', 'drlabel' => 'Dizziness', 'label' => 'Dizziness', 'type' => 'radio'),
+			array('name' => 'vertigo', 'drlabel' => 'Vertigo', 'label' => 'Vertigo', 'type' => 'radio'),
+			array('name' => 'ear_pain', 'drlabel' => 'Otalgia', 'label' => 'Ear Pain', 'type' => 'radio'),
+			array('name' => 'ear_drainage', 'drlabel' => 'Ear Drainage', 'label' => 'Ear Drainage', 'type' => 'radio'),
+			array('name' => 'ear_surgery', 'drlabel' => 'Ear Surgery', 'label' => 'Ear Surgery', 'type' => 'radio'),
+			array('name' => 'ear_infections', 'drlabel' => 'Ear Infections', 'label' => 'Ear Infections', 'type' => 'radio')
 		)
 	),
 	array(
 		'name' => 'Nose',
 		'fields' => array(
-			array('name' => 'allergies', 'label' => 'Allergies', 'type' => 'radio'),
-			array('name' => 'congestion', 'label' => 'Congestion', 'type' => 'radio'),
-			array('name' => 'stuffiness', 'label' => 'Stuffiness', 'type' => 'radio'),
-			array('name' => 'sinus_pain', 'label' => 'Sinus Pain', 'type' => 'radio'),
-			array('name' => 'sinus_pressure', 'label' => 'Sinus Pressure', 'type' => 'radio'),
-			array('name' => 'sinus_surgery', 'label' => 'Sinus Surgery', 'type' => 'radio'),
-			array('name' => 'blocked_breathing', 'label' => 'Blocked Breathing', 'type' => 'radio')
+			array('name' => 'allergies', 'drlabel' => 'Allergies', 'label' => 'Allergies', 'type' => 'radio'),
+			array('name' => 'congestion', 'drlabel' => 'Congestion', 'label' => 'Congestion', 'type' => 'radio'),
+			array('name' => 'stuffiness', 'drlabel' => 'Stuffiness', 'label' => 'Stuffiness', 'type' => 'radio'),
+			array('name' => 'sinus_pain', 'drlabel' => 'Sinus Pain', 'label' => 'Sinus Pain', 'type' => 'radio'),
+			array('name' => 'sinus_pressure', 'drlabel' => 'Sinus Pressure', 'label' => 'Sinus Pressure', 'type' => 'radio'),
+			array('name' => 'sinus_surgery', 'drlabel' => 'Sinus Surgery', 'label' => 'Sinus Surgery', 'type' => 'radio'),
+			array('name' => 'blocked_breathing', 'drlabel' => 'Blocked Breathing', 'label' => 'Blocked Breathing', 'type' => 'radio')
 		)
 	),
 	array(
 		'name' => 'Throat',
 		'fields' => array(
-			array('name' => 'hoarseness', 'label' => 'Hoarseness', 'type' => 'radio'),
-			array('name' => 'dryness', 'label' => 'Dryness', 'type' => 'radio'),
-			array('name' => 'voice_fatigue', 'label' => 'Voice Fatigue', 'type' => 'radio'),
-			array('name' => 'frequent_throat_clearing', 'label' => 'Frequent Throat Clearing', 'type' => 'radio'),
-			array('name' => 'increased_phlegm', 'label' => 'Increased Phlegm', 'type' => 'radio'),
-			array('name' => 'post_nasal_drip', 'label' => 'Post Nasal Drip', 'type' => 'radio')
+			array('name' => 'hoarseness', 'drlabel' => 'Hoarseness', 'label' => 'Hoarseness', 'type' => 'radio'),
+			array('name' => 'dryness', 'drlabel' => 'Dryness', 'label' => 'Dryness', 'type' => 'radio'),
+			array('name' => 'voice_fatigue', 'drlabel' => 'Voice Fatigue', 'label' => 'Voice Fatigue', 'type' => 'radio'),
+			array('name' => 'frequent_throat_clearing', 'drlabel' => 'Frequent Throat Clearing', 'label' => 'Frequent Throat Clearing', 'type' => 'radio'),
+			array('name' => 'increased_phlegm', 'drlabel' => 'Increased Phlegm', 'label' => 'Increased Phlegm', 'type' => 'radio'),
+			array('name' => 'post_nasal_drip', 'drlabel' => 'Post Nasal Drip', 'label' => 'Post Nasal Drip', 'type' => 'radio')
 		)
 	),
 	array(
 		'name' => 'Face',
 		'fields' => array(
-			array('name' => 'face_pain', 'label' => 'Pain', 'type' => 'radio'),
-			array('name' => 'face_numbness', 'label' => 'Numbness', 'type' => 'radio'),
-			array('name' => 'twitching', 'label' => 'Twitching', 'type' => 'radio'),
-			array('name' => 'face_weakness', 'label' => 'Weakness', 'type' => 'radio'),
-			array('name' => 'lopsided', 'label' => 'Lopsided', 'type' => 'radio')
+			array('name' => 'face_pain', 'drlabel' => 'Pain', 'label' => 'Pain', 'type' => 'radio'),
+			array('name' => 'face_numbness', 'drlabel' => 'Numbness', 'label' => 'Numbness', 'type' => 'radio'),
+			array('name' => 'twitching', 'drlabel' => 'Twitching', 'label' => 'Twitching', 'type' => 'radio'),
+			array('name' => 'face_weakness', 'drlabel' => 'Weakness', 'label' => 'Weakness', 'type' => 'radio'),
+			array('name' => 'lopsided', 'drlabel' => 'Lopsided', 'label' => 'Lopsided', 'type' => 'radio')
 		)
 	),
 	array(
 		'name' => 'Neck',
 		'fields' => array(
-			array('name' => 'neck_pain', 'label' => 'Pain', 'type' => 'radio'),
-			array('name' => 'mass', 'label' => 'Mass', 'type' => 'radio'),
-			array('name' => 'lump', 'label' => 'Lump', 'type' => 'radio'),
-			array('name' => 'goiter', 'label' => 'Goiter', 'type' => 'radio'),
-			array('name' => 'spine_surgery', 'label' => 'Spine Surgery', 'type' => 'radio'),
-			array('name' => 'decreased_mobility', 'label' => 'Decreased Mobility', 'type' => 'radio'),
-			array('name' => 'noisy_breathing', 'label' => 'Noisy Breathing', 'type' => 'radio')
+			array('name' => 'neck_pain', 'drlabel' => 'Pain', 'label' => 'Pain', 'type' => 'radio'),
+			array('name' => 'mass', 'drlabel' => 'Mass', 'label' => 'Mass', 'type' => 'radio'),
+			array('name' => 'lump', 'drlabel' => 'Lump', 'label' => 'Lump', 'type' => 'radio'),
+			array('name' => 'goiter', 'drlabel' => 'Goiter', 'label' => 'Goiter', 'type' => 'radio'),
+			array('name' => 'spine_surgery', 'drlabel' => 'Spine Surgery', 'label' => 'Spine Surgery', 'type' => 'radio'),
+			array('name' => 'decreased_mobility', 'drlabel' => 'Decreased Mobility', 'label' => 'Decreased Mobility', 'type' => 'radio'),
+			array('name' => 'noisy_breathing', 'drlabel' => 'Noisy Breathing', 'label' => 'Noisy Breathing', 'type' => 'radio')
 		)
 	),
 	array(
 		'name' => 'Neuro',
 		'fields' => array(
-			array('name' => 'headache', 'label' => 'Headache', 'type' => 'radio'),
-			array('name' => 'numbness', 'label' => 'Numbness', 'type' => 'radio'),
-			array('name' => 'weakness', 'label' => 'Weakness', 'type' => 'radio'),
-			array('name' => 'walking_problems', 'label' => 'Walking Problems', 'type' => 'radio')
+			array('name' => 'headache', 'drlabel' => 'Headache', 'label' => 'Headache', 'type' => 'radio'),
+			array('name' => 'numbness', 'drlabel' => 'Numbness', 'label' => 'Numbness', 'type' => 'radio'),
+			array('name' => 'weakness', 'drlabel' => 'Weakness', 'label' => 'Weakness', 'type' => 'radio'),
+			array('name' => 'walking_problems', 'drlabel' => 'Walking Problems', 'label' => 'Walking Problems', 'type' => 'radio')
 		)
 	),
 	array(
 		'name' => 'Heart',
 		'fields' => array(
-			array('name' => 'chest_pain', 'label' => 'Chest Pain', 'type' => 'radio'),
-			array('name' => 'heart_attack', 'label' => 'Heart Attack', 'type' => 'radio'),
-			array('name' => 'heart_failure', 'label' => 'Heart Failure', 'type' => 'radio'),
-			array('name' => 'abnormal_rhythm', 'label' => 'Abnormal Rhythm', 'type' => 'radio')
+			array('name' => 'chest_pain', 'drlabel' => 'Chest Pain', 'label' => 'Chest Pain', 'type' => 'radio'),
+			array('name' => 'heart_attack', 'drlabel' => 'Heart Attack', 'label' => 'Heart Attack', 'type' => 'radio'),
+			array('name' => 'heart_failure', 'drlabel' => 'Heart Failure', 'label' => 'Heart Failure', 'type' => 'radio'),
+			array('name' => 'abnormal_rhythm', 'drlabel' => 'Abnormal Rhythm', 'label' => 'Abnormal Rhythm', 'type' => 'radio')
 		)
 	),
 	array(
 		'name' => 'Lungs',
 		'fields' => array(
-			array('name' => 'breathing_changes', 'label' => 'Changes in Breathing', 'type' => 'radio'),
-			array('name' => 'asthma', 'label' => 'Asthma', 'type' => 'radio'),
-			array('name' => 'copd', 'label' => 'COPD', 'type' => 'radio'),
-			array('name' => 'smoking', 'label' => 'Smoking', 'type' => 'radio'),
-			array('name' => 'cough', 'label' => 'Cough', 'type' => 'radio')
+			array('name' => 'breathing_changes', 'drlabel' => 'Changes in Breathing', 'label' => 'Changes in Breathing', 'type' => 'radio'),
+			array('name' => 'asthma', 'drlabel' => 'Asthma', 'label' => 'Asthma', 'type' => 'radio'),
+			array('name' => 'copd', 'drlabel' => 'COPD', 'label' => 'COPD', 'type' => 'radio'),
+			array('name' => 'smoking', 'drlabel' => 'Smoking', 'label' => 'Smoking', 'type' => 'radio'),
+			array('name' => 'cough', 'drlabel' => 'Cough', 'label' => 'Cough', 'type' => 'radio')
 		)
 	),
 	array(
 		'name' => 'Gastrointestinal',
 		'fields' => array(
-			array('name' => 'stomach_pain', 'label' => 'Stomach Pain', 'type' => 'radio'),
-			array('name' => 'diarrhea', 'label' => 'Diarrhea', 'type' => 'radio'),
-			array('name' => 'constipation', 'label' => 'Constipation', 'type' => 'radio'),
-			array('name' => 'nausea', 'label' => 'Nausea', 'type' => 'radio'),
-			array('name' => 'vomiting', 'label' => 'Vomiting', 'type' => 'radio'),
-			array('name' => 'cramping', 'label' => 'Cramping', 'type' => 'radio'),
-			array('name' => 'appetite_changes', 'label' => 'Changes in Appetite', 'type' => 'radio')
+			array('name' => 'stomach_pain', 'drlabel' => 'Stomach Pain', 'label' => 'Stomach Pain', 'type' => 'radio'),
+			array('name' => 'diarrhea', 'drlabel' => 'Diarrhea', 'label' => 'Diarrhea', 'type' => 'radio'),
+			array('name' => 'constipation', 'drlabel' => 'Constipation', 'label' => 'Constipation', 'type' => 'radio'),
+			array('name' => 'nausea', 'drlabel' => 'Nausea', 'label' => 'Nausea', 'type' => 'radio'),
+			array('name' => 'vomiting', 'drlabel' => 'Vomiting', 'label' => 'Vomiting', 'type' => 'radio'),
+			array('name' => 'cramping', 'drlabel' => 'Cramping', 'label' => 'Cramping', 'type' => 'radio'),
+			array('name' => 'appetite_changes', 'drlabel' => 'Changes in Appetite', 'label' => 'Changes in Appetite', 'type' => 'radio')
 		)
 	),
 	array(
 		'name' => 'Immune System',
 		'fields' => array(
-			array('name' => 'abnormal_lymph_nodes', 'label' => 'Abnormal Lymph Nodes', 'type' => 'radio'),
-			array('name' => 'rheumatoid_arthritis', 'label' => 'Rheumatoid Arthritis', 'type' => 'radio'),
-			array('name' => 'lupus', 'label' => 'Lupus', 'type' => 'radio'),
-			array('name' => 'sjogrens', 'label' => 'Sjorgren\'s', 'type' => 'radio'),
-			array('name' => 'wegeners', 'label' => 'Wegener\'s', 'type' => 'radio'),
-			array('name' => 'psoriasis', 'label' => 'Psoriasis', 'type' => 'radio'),
-			array('name' => 'osteoarthritis', 'label' => 'Osteoarthritis', 'type' => 'radio')
+			array('name' => 'abnormal_lymph_nodes', 'drlabel' => 'Abnormal Lymph Nodes', 'label' => 'Abnormal Lymph Nodes', 'type' => 'radio'),
+			array('name' => 'rheumatoid_arthritis', 'drlabel' => 'Rheumatoid Arthritis', 'label' => 'Rheumatoid Arthritis', 'type' => 'radio'),
+			array('name' => 'lupus', 'drlabel' => 'Lupus', 'label' => 'Lupus', 'type' => 'radio'),
+			array('name' => 'sjogrens', 'drlabel' => 'Sjorgren\'s', 'label' => 'Sjorgren\'s', 'type' => 'radio'),
+			array('name' => 'wegeners', 'drlabel' => 'Wegener\'s', 'label' => 'Wegener\'s', 'type' => 'radio'),
+			array('name' => 'psoriasis', 'drlabel' => 'Psoriasis', 'label' => 'Psoriasis', 'type' => 'radio'),
+			array('name' => 'osteoarthritis', 'drlabel' => 'Osteoarthritis', 'label' => 'Osteoarthritis', 'type' => 'radio')
 		)
 	)
 );

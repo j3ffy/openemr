@@ -13,6 +13,14 @@ require_once($GLOBALS['srcdir'].'/options.inc.php');
 /* Variables/settings common to all views included here*/
 require_once("aec_ros_options.inc.php");
 
+/* create mapping from field name to the Dr.'s prefered label */
+$drLabelMap = array();
+foreach($sections as $section) {
+	foreach($section['fields'] as $field) {
+		$drLabelMap[$field['name']] = $field['drlabel'];
+	}
+}
+
 function aec_ros_report( $pid, $encounter, $cols, $id) {
 	$table_name = 'form_aec_ros';
     $count = 0;
@@ -40,7 +48,11 @@ function aec_ros_report( $pid, $encounter, $cols, $id) {
                 $value = 'yes';
             }
 			
-			$key=ucwords(str_replace("_"," ",$key));
+			if(in_array($key, $drLabelMap)) {
+				$key = $drLabelMap[$key];
+			} else {
+				$key = ucwords(str_replace("_"," ",$key));
+			}
 
             /* remove the time-of-day from the 'date' fields. */
             if ($field_names[$key] == 'date')
@@ -50,10 +62,6 @@ function aec_ros_report( $pid, $encounter, $cols, $id) {
             }
 
 	    echo "<td><span class='bold'>". xl($key) . ": </span><span class=text>" . xl($value) . "</span></td>";;
-            
-
-            
-
             $count++;
             if ($count == $cols) {
                 $count = 0;
