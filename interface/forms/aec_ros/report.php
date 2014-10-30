@@ -10,20 +10,23 @@ require_once($GLOBALS['srcdir'].'/api.inc');
 /* for generate_display_field() */
 require_once($GLOBALS['srcdir'].'/options.inc.php');
 /* The name of the function is significant and must match the folder name */
-/* Variables/settings common to all views included here*/
-require_once("aec_ros_options.inc.php");
-
-/* create mapping from field name to the Dr.'s prefered label */
-$drLabelMap = array();
-foreach($sections as $section) {
-	foreach($section['fields'] as $field) {
-		$drLabelMap[$field['name']] = $field['drlabel'];
-	}
-}
 
 function aec_ros_report( $pid, $encounter, $cols, $id) {
-	$table_name = 'form_aec_ros';
-    $count = 0;
+	// $table_name = 'form_aec_ros';
+	/* Variables/settings common to all views included here*/
+	require_once("aec_ros_options.inc.php");
+
+	/* create mapping from field name to the Dr.'s prefered label */
+	$drLabelMap = array();
+	$field_names = array();
+	foreach($sections as $section) {
+		foreach($section['fields'] as $field) {
+			$drLabelMap[$field['name']] = $field['drlabel'];
+			$field_names[$field['name']] = $field['type'];
+		}
+	}
+    
+	$count = 0;
 
 /* an array of the lists the fields may draw on. */
     $data = formFetch($table_name, $id);
@@ -48,18 +51,19 @@ function aec_ros_report( $pid, $encounter, $cols, $id) {
                 $value = 'yes';
             }
 			
-			if(in_array($key, $drLabelMap)) {
+			/* remove the time-of-day from the 'date' fields. */
+			if ($field_names[$key] == 'date') {
+				if ($value != '') {
+					$dateparts = split(' ', $value);
+					$value = $dateparts[0];
+				}
+			}
+			
+			if(array_key_exists($key, $drLabelMap)) {
 				$key = $drLabelMap[$key];
 			} else {
 				$key = ucwords(str_replace("_"," ",$key));
 			}
-
-            /* remove the time-of-day from the 'date' fields. */
-            if ($field_names[$key] == 'date')
-            if ($value != '') {
-              $dateparts = split(' ', $value);
-              $value = $dateparts[0];
-            }
 
 	    echo "<td><span class='bold'>". xl($key) . ": </span><span class=text>" . xl($value) . "</span></td>";;
             $count++;
