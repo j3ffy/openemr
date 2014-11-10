@@ -10,7 +10,13 @@ $sections = array(
 			array('name' => 'weight_loss', 'drlabel' => 'Weight Loss', 'label' => 'Weight Loss', 'type' => 'radio'),
 			array('name' => 'weight_gain', 'drlabel' => 'Weight Gain', 'label' => 'Weight Gain', 'type' => 'radio'),
 			array('name' => 'fatigue', 'drlabel' => 'Fatigue', 'label' => 'Fatigue', 'type' => 'radio'),
-			array('name' => 'sleep_problems', 'drlabel' => 'Sleep Problems', 'label' => 'Sleep Problems', 'type' => 'radio')
+			array('name' => 'night_sweats', 'drlabel' => 'Night Sweats', 'label' => 'Night Sweats', 'type' => 'radio'),
+			array('name' => 'fevers_chills', 'drlabel' => 'Fevers/Chills', 'label' => 'Fevers/Chills', 'type' => 'radio'),
+			array('name' => 'rashes', 'drlabel' => 'Rashes', 'label' => 'Rashes', 'type' => 'radio'),
+			array('name' => 'hair_skin_nails', 'drlabel' => 'Changes to hair/skin/nails', 'label' => 'Changes to hair/skin/nails', 'type' => 'radio'),
+			array('name' => 'heat_cold_intolerance', 'drlabel' => 'Heat/Cold Intolerance', 'label' => 'Heat/Cold Intolerance', 'type' => 'radio'),
+			array('name' => 'bleeding_bruising', 'drlabel' => 'Easy Bleeding/Bruising', 'label' => 'Easy Bleeding/Bruising', 'type' => 'radio'),
+			array('name' => 'heavy_menses', 'drlabel' => 'Heavy Menses', 'label' => 'Heavy Menses', 'type' => 'radio')
 		)
 	),
 	array(
@@ -20,7 +26,10 @@ $sections = array(
 			array('name' => 'blurry_vision', 'drlabel' => 'Blurry Vision', 'label' => 'Blurry Vision', 'type' => 'radio'),
 			array('name' => 'wear_glasses', 'drlabel' => 'Wear Glasses', 'label' => 'Wear Glasses', 'type' => 'radio'),
 			array('name' => 'floaters', 'drlabel' => 'Floaters', 'label' => 'Floaters', 'type' => 'radio'),
-			array('name' => 'glaucoma', 'drlabel' => 'Glaucoma', 'label' => 'Glaucoma', 'type' => 'radio')
+			array('name' => 'glaucoma', 'drlabel' => 'Glaucoma', 'label' => 'Glaucoma', 'type' => 'radio'),
+			array('name' => 'cataracts', 'drlabel' => 'Cataracts', 'label' => 'Cataracts', 'type' => 'radio'),
+			array('name' => 'watery_itchy_eyes', 'drlabel' => 'Watery or Itchy Eyes', 'label' => 'Watery or Itchy Eyes', 'type' => 'radio'),
+			array('name' => 'dry_eyes', 'drlabel' => 'Dry Eyes', 'label' => 'Dry Eyes', 'type' => 'radio')
 		)
 	),
 	array(
