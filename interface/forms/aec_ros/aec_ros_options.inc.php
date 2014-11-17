@@ -12,7 +12,6 @@ $sections = array(
 			array('name' => 'fatigue', 'drlabel' => 'Fatigue', 'label' => 'Fatigue', 'type' => 'radio'),
 			array('name' => 'night_sweats', 'drlabel' => 'Night Sweats', 'label' => 'Night Sweats', 'type' => 'radio'),
 			array('name' => 'fevers_chills', 'drlabel' => 'Fevers/Chills', 'label' => 'Fevers/Chills', 'type' => 'radio'),
-			array('name' => 'rashes', 'drlabel' => 'Rashes', 'label' => 'Rashes', 'type' => 'radio'),
 			array('name' => 'hair_skin_nails', 'drlabel' => 'Changes to hair/skin/nails', 'label' => 'Changes to hair/skin/nails', 'type' => 'radio'),
 			array('name' => 'heat_cold_intolerance', 'drlabel' => 'Heat/Cold Intolerance', 'label' => 'Heat/Cold Intolerance', 'type' => 'radio'),
 			array('name' => 'bleeding_bruising', 'drlabel' => 'Easy Bleeding/Bruising', 'label' => 'Easy Bleeding/Bruising', 'type' => 'radio'),
@@ -35,27 +34,42 @@ $sections = array(
 	array(
 		'name' => 'Ears',
 		'fields' => array(
-			array('name' => 'hearing_loss', 'drlabel' => 'Hearing Loss', 'label' => 'Hearing Loss', 'type' => 'radio'),
+			array('name' => 'ear_pain', 'drlabel' => 'Ear Pain', 'label' => 'Ear Pain', 'type' => 'radio'),
+			array('name' => 'ear_drainage', 'drlabel' => 'Ear Drainage', 'label' => 'Ear Drainage', 'type' => 'radio'),
+			array('name' => 'ear_pressure', 'drlabel' => 'Ear Pressure', 'label' => 'Ear Pressure', 'type' => 'radio'),
+			array('name' => 'ear_fullness', 'drlabel' => 'Ear Fullness', 'label' => 'Ear Fullness', 'type' => 'radio'),
 			array('name' => 'ringing', 'drlabel' => 'Ringing', 'label' => 'Ringing', 'type' => 'radio'),
 			array('name' => 'roaring', 'drlabel' => 'Roaring', 'label' => 'Roaring', 'type' => 'radio'),
+			array('name' => 'pulsing_noises', 'drlabel' => 'Pulsing Noises', 'label' => 'Pulsing Noises', 'type' => 'radio'),
 			array('name' => 'dizziness', 'drlabel' => 'Dizziness', 'label' => 'Dizziness', 'type' => 'radio'),
 			array('name' => 'vertigo', 'drlabel' => 'Vertigo', 'label' => 'Vertigo', 'type' => 'radio'),
-			array('name' => 'ear_pain', 'drlabel' => 'Otalgia', 'label' => 'Ear Pain', 'type' => 'radio'),
-			array('name' => 'ear_drainage', 'drlabel' => 'Ear Drainage', 'label' => 'Ear Drainage', 'type' => 'radio'),
 			array('name' => 'ear_surgery', 'drlabel' => 'Ear Surgery', 'label' => 'Ear Surgery', 'type' => 'radio'),
-			array('name' => 'ear_infections', 'drlabel' => 'Ear Infections', 'label' => 'Ear Infections', 'type' => 'radio')
+			array('name' => 'ear_infections', 'drlabel' => 'Ear Infections', 'label' => 'Ear Infections', 'type' => 'radio'),
+			array('name' => 'use_q_tips', 'drlabel' => 'Use Q-tips', 'label' => 'Use Q-tips', 'type' => 'radio'),
+			array('name' => 'wax_buildup', 'drlabel' => 'Too much wax', 'label' => 'Too much wax', 'type' => 'radio'),
+			array('name' => 'ear_tubes', 'drlabel' => 'Ear Tubes', 'label' => 'Ear Tubes', 'type' => 'radio')
+		)
+	),
+	array(
+		'name' => 'Hearing',
+		'fields' => array(
+			array('name' => 'hearing_loss', 'drlabel' => 'Hearing Loss', 'label' => 'Hearing Loss', 'type' => 'radio'),
+			array('name' => 'recent_hearing_changes', 'drlabel' => 'Recent Changes in Hearing', 'label' => 'Recent Changes in Hearing', 'type' => 'radio'),
+			array('name' => 'hearing_up_down', 'drlabel' => 'Hearing going up and down', 'label' => 'Hearing going up and down', 'type' => 'radio'),
+			array('name' => 'hearing_aids', 'drlabel' => 'Use Hearing Aids', 'label' => 'Use Hearing Aids', 'type' => 'radio'),
+			array('name' => 'deafness', 'drlabel' => 'Deafness', 'label' => 'Deafness', 'type' => 'radio')
 		)
 	),
 	array(
 		'name' => 'Nose',
 		'fields' => array(
+			array('name' => 'blocked_breathing', 'drlabel' => 'Obstruction (Can\'t breathe through nose)', 'label' => 'Obstruction (Can\'t breathe through nose)', 'type' => 'radio'),
 			array('name' => 'allergies', 'drlabel' => 'Allergies', 'label' => 'Allergies', 'type' => 'radio'),
 			array('name' => 'congestion', 'drlabel' => 'Congestion', 'label' => 'Congestion', 'type' => 'radio'),
 			array('name' => 'stuffiness', 'drlabel' => 'Stuffiness', 'label' => 'Stuffiness', 'type' => 'radio'),
 			array('name' => 'sinus_pain', 'drlabel' => 'Sinus Pain', 'label' => 'Sinus Pain', 'type' => 'radio'),
 			array('name' => 'sinus_pressure', 'drlabel' => 'Sinus Pressure', 'label' => 'Sinus Pressure', 'type' => 'radio'),
-			array('name' => 'sinus_surgery', 'drlabel' => 'Sinus Surgery', 'label' => 'Sinus Surgery', 'type' => 'radio'),
-			array('name' => 'blocked_breathing', 'drlabel' => 'Blocked Breathing', 'label' => 'Blocked Breathing', 'type' => 'radio')
+			array('name' => 'sinus_surgery', 'drlabel' => 'Sinus Surgery', 'label' => 'Sinus Surgery', 'type' => 'radio')
 		)
 	),
 	array(
@@ -89,6 +103,16 @@ $sections = array(
 			array('name' => 'spine_surgery', 'drlabel' => 'Spine Surgery', 'label' => 'Spine Surgery', 'type' => 'radio'),
 			array('name' => 'decreased_mobility', 'drlabel' => 'Decreased Mobility', 'label' => 'Decreased Mobility', 'type' => 'radio'),
 			array('name' => 'noisy_breathing', 'drlabel' => 'Noisy Breathing', 'label' => 'Noisy Breathing', 'type' => 'radio')
+		)
+	),
+	array(
+		'name' => 'Skin',
+		'fields' => array(
+			array('name' => 'headache', 'drlabel' => 'Headache', 'label' => 'Headache', 'type' => 'radio'),
+			array('name' => 'numbness', 'drlabel' => 'Numbness', 'label' => 'Numbness', 'type' => 'radio'),
+			array('name' => 'weakness', 'drlabel' => 'Weakness', 'label' => 'Weakness', 'type' => 'radio'),
+			array('name' => 'walking_problems', 'drlabel' => 'Walking Problems', 'label' => 'Walking Problems', 'type' => 'radio'),
+			array('name' => 'rashes', 'drlabel' => 'Rashes', 'label' => 'Rashes', 'type' => 'radio')
 		)
 	),
 	array(
