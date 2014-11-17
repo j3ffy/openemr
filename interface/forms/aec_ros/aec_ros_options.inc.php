@@ -64,23 +64,49 @@ $sections = array(
 		'name' => 'Nose',
 		'fields' => array(
 			array('name' => 'blocked_breathing', 'drlabel' => 'Obstruction (Can\'t breathe through nose)', 'label' => 'Obstruction (Can\'t breathe through nose)', 'type' => 'radio'),
-			array('name' => 'allergies', 'drlabel' => 'Allergies', 'label' => 'Allergies', 'type' => 'radio'),
-			array('name' => 'congestion', 'drlabel' => 'Congestion', 'label' => 'Congestion', 'type' => 'radio'),
-			array('name' => 'stuffiness', 'drlabel' => 'Stuffiness', 'label' => 'Stuffiness', 'type' => 'radio'),
-			array('name' => 'sinus_pain', 'drlabel' => 'Sinus Pain', 'label' => 'Sinus Pain', 'type' => 'radio'),
+			array('name' => 'post_nasal_drip', 'drlabel' => 'Post Nasal Drainage', 'label' => 'Post Nasal Drainage', 'type' => 'radio'),
+			array('name' => 'stuffiness', 'drlabel' => 'Nasal Congestion/Stuffiness', 'label' => 'Nasal Congestion/Stuffiness', 'type' => 'radio'),
+			array('name' => 'foul_nasal_drainage', 'drlabel' => 'Purulent/Foul Nasal Drainage', 'label' => 'Purulent/Foul Nasal Drainage', 'type' => 'radio'),
+			array('name' => 'itchy_watery_nose', 'drlabel' => 'Itchy, Watery Nose', 'label' => 'Itchy, Watery Nose', 'type' => 'radio'),
+			array('name' => 'frequent_sneezing', 'drlabel' => 'Frequent Sneezing', 'label' => 'Frequent Sneezing', 'type' => 'radio'),
+			array('name' => 'allergies', 'drlabel' => 'Nasal Allergies', 'label' => 'Nasal Allergies', 'type' => 'radio'),
+			array('name' => 'nosebleeds', 'drlabel' => 'Nosebleeds', 'label' => 'Nosebleeds', 'type' => 'radio'),
+			array('name' => 'night_nose_breathing', 'drlabel' => 'Difficulty breathing through nose at night', 'label' => 'Difficulty breathing through nose at night', 'type' => 'radio')
+		)
+	),
+	array(
+		'name' => 'Sinuses',
+		'fields' => array(
+			array('name' => 'sinus_headaches', 'drlabel' => 'Sinus Headaches', 'label' => 'Sinus Headaches', 'type' => 'radio'),
 			array('name' => 'sinus_pressure', 'drlabel' => 'Sinus Pressure', 'label' => 'Sinus Pressure', 'type' => 'radio'),
-			array('name' => 'sinus_surgery', 'drlabel' => 'Sinus Surgery', 'label' => 'Sinus Surgery', 'type' => 'radio')
+			array('name' => 'sinus_pressure_cheeks', 'drlabel' => 'Sinus Pressure -- Cheeks', 'label' => 'Sinus Pressure -- Cheeks', 'type' => 'radio'),
+			array('name' => 'sinus_pressure_forehead', 'drlabel' => 'Sinus Pressure -- Forehead', 'label' => 'Sinus Pressure -- Forehead', 'type' => 'radio'),
+			array('name' => 'sinus_pressure_eyes', 'drlabel' => 'Sinus Pressure -- Between/Behind Eyes', 'label' => 'Sinus Pressure -- Between/Behind Eyes', 'type' => 'radio'),
+			array('name' => 'long_colds', 'drlabel' => 'Colds last longer than average', 'label' => 'Colds last longer than average', 'type' => 'radio'),
+			array('name' => 'frequent_sinus_infections', 'drlabel' => 'Frequent Sinus Infections', 'label' => 'Frequent Sinus Infections', 'type' => 'radio'),
+			array('name' => 'chronic_sinus_infections', 'drlabel' => 'Chronic Sinus Infections', 'label' => 'Chronic Sinus Infections', 'type' => 'radio'),
+			array('name' => 'sinus_surgery', 'drlabel' => 'Sinus Surgery', 'label' => 'Sinus Surgery', 'type' => 'radio'),
+			array('name' => 'tooth_pain', 'drlabel' => 'Tooth Pain', 'label' => 'Tooth Pain', 'type' => 'radio'),
+			array('name' => 'altered_smell_taste', 'drlabel' => 'Altered Smell/Taste', 'label' => 'Altered Smell/Taste', 'type' => 'radio')
 		)
 	),
 	array(
 		'name' => 'Throat',
 		'fields' => array(
+			array('name' => 'sore_throat', 'drlabel' => 'Sore Throat', 'label' => 'Sore Throat', 'type' => 'radio'),
+			array('name' => 'dryness', 'drlabel' => 'Dry Mouth/Throat', 'label' => 'Dry Mouth/Throat', 'type' => 'radio'),
+			array('name' => 'diff_swallowing', 'drlabel' => 'Difficulty Swallowing', 'label' => 'Difficulty Swallowing', 'type' => 'radio'),
+			array('name' => 'painful_swallowing', 'drlabel' => 'Painful Swallowing', 'label' => 'Painful Swallowing', 'type' => 'radio'),
+			array('name' => 'frequent_throat_infections', 'drlabel' => 'Frequent Throat Infections', 'label' => 'Frequent Throat Infections', 'type' => 'radio'),
+			array('name' => 'frequent_tonsil_infections', 'drlabel' => 'Frequent Tonsil Infections', 'label' => 'Frequent Tonsil Infections', 'type' => 'radio'),
+			array('name' => 'tonsil_adenoid_surgery', 'drlabel' => 'Previous Tonsil or Adenoid Surgery', 'label' => 'Previous Tonsil or Adenoid Surgery', 'type' => 'radio'),
 			array('name' => 'hoarseness', 'drlabel' => 'Hoarseness', 'label' => 'Hoarseness', 'type' => 'radio'),
-			array('name' => 'dryness', 'drlabel' => 'Dryness', 'label' => 'Dryness', 'type' => 'radio'),
-			array('name' => 'voice_fatigue', 'drlabel' => 'Voice Fatigue', 'label' => 'Voice Fatigue', 'type' => 'radio'),
+			array('name' => 'voice_fatigue', 'drlabel' => 'Voice wears out quickly', 'label' => 'Voice wears out quickly', 'type' => 'radio'),
+			array('name' => 'weak_voice', 'drlabel' => 'Weak Voice', 'label' => 'Weak Voice', 'type' => 'radio'),
+			array('name' => 'voice_tremor', 'drlabel' => 'Voice Tremor or Stutter', 'label' => 'Voice Tremor or Stutter', 'type' => 'radio'),
 			array('name' => 'frequent_throat_clearing', 'drlabel' => 'Frequent Throat Clearing', 'label' => 'Frequent Throat Clearing', 'type' => 'radio'),
 			array('name' => 'increased_phlegm', 'drlabel' => 'Increased Phlegm', 'label' => 'Increased Phlegm', 'type' => 'radio'),
-			array('name' => 'post_nasal_drip', 'drlabel' => 'Post Nasal Drip', 'label' => 'Post Nasal Drip', 'type' => 'radio')
+			array('name' => 'food_sticking', 'drlabel' => 'Food Sticking or Going Down Wrong', 'label' => 'Food Sticking or Going Down Wrong', 'type' => 'radio')
 		)
 	),
 	array(
