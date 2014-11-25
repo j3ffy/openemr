@@ -116,7 +116,8 @@ $sections = array(
 			array('name' => 'face_numbness', 'drlabel' => 'Numbness', 'label' => 'Numbness', 'type' => 'radio'),
 			array('name' => 'twitching', 'drlabel' => 'Twitching', 'label' => 'Twitching', 'type' => 'radio'),
 			array('name' => 'face_weakness', 'drlabel' => 'Weakness', 'label' => 'Weakness', 'type' => 'radio'),
-			array('name' => 'lopsided', 'drlabel' => 'Lopsided', 'label' => 'Lopsided', 'type' => 'radio')
+			array('name' => 'lopsided', 'drlabel' => 'Lopsided', 'label' => 'Lopsided', 'type' => 'radio'),
+			array('name' => 'prev_bells_palsy', 'drlabel' => 'Previous Bell\'s Palsy', 'label' => 'Previous Bell\'s Palsy', 'type' => 'radio')
 		)
 	),
 	array(
@@ -142,21 +143,45 @@ $sections = array(
 		)
 	),
 	array(
+		'name' => 'Sleep',
+		'fields' => array(
+			array('name' => 'sleep_problems', 'drlabel' => 'Problems Sleeping', 'label' => 'Problems Sleeping', 'type' => 'radio'),
+			array('name' => 'sleep_apnea', 'drlabel' => 'Sleep Apnea', 'label' => 'Sleep Apnea', 'type' => 'radio'),
+			array('name' => 'use_cpap', 'drlabel' => 'Use CPAP', 'label' => 'Use CPAP', 'type' => 'radio'),
+			array('name' => 'snoring', 'drlabel' => 'Snoring', 'label' => 'Snoring', 'type' => 'radio'),
+			array('name' => 'wake_frequently', 'drlabel' => 'Wake up frequently at night', 'label' => 'Wake up frequently at night', 'type' => 'radio'),
+			array('name' => 'stop_breathing', 'drlabel' => 'Stop Breathing at Night', 'label' => 'Stop Breathing at Night', 'type' => 'radio'),
+			array('name' => 'sleep_choking', 'drlabel' => 'Choking or Gagging During Sleep', 'label' => 'Choking or Gagging During Sleep', 'type' => 'radio'),
+			array('name' => 'sleepiness', 'drlabel' => 'Sleepy During the Day', 'label' => 'Sleepy During the Day', 'type' => 'radio'),
+			array('name' => 'not_rested', 'drlabel' => 'Not well-rested in the morning', 'label' => 'Not well-rested in the morning', 'type' => 'radio')
+		)
+	),
+	array(
 		'name' => 'Neuro',
 		'fields' => array(
 			array('name' => 'headache', 'drlabel' => 'Headache', 'label' => 'Headache', 'type' => 'radio'),
+			array('name' => 'migraines', 'drlabel' => 'Migraines', 'label' => 'Migraines', 'type' => 'radio'),
 			array('name' => 'numbness', 'drlabel' => 'Numbness', 'label' => 'Numbness', 'type' => 'radio'),
 			array('name' => 'weakness', 'drlabel' => 'Weakness', 'label' => 'Weakness', 'type' => 'radio'),
-			array('name' => 'walking_problems', 'drlabel' => 'Walking Problems', 'label' => 'Walking Problems', 'type' => 'radio')
+			array('name' => 'walking_problems', 'drlabel' => 'Walking Problems', 'label' => 'Walking Problems', 'type' => 'radio'),
+			array('name' => 'stroke', 'drlabel' => 'Stroke', 'label' => 'Stroke', 'type' => 'radio'),
+			array('name' => 'memory_loss', 'drlabel' => 'Difficulty Thinking/Memory Loss', 'label' => 'Difficulty Thinking/Memory Loss', 'type' => 'radio'),
+			array('name' => 'giddiness', 'drlabel' => 'Dizzy or Giddy Feeling', 'label' => 'Dizzy or Giddy Feeling', 'type' => 'radio'),
+			array('name' => 'lightheaded', 'drlabel' => 'Lightheaded', 'label' => 'Lightheaded', 'type' => 'radio'),
 		)
 	),
 	array(
 		'name' => 'Heart',
 		'fields' => array(
-			array('name' => 'chest_pain', 'drlabel' => 'Chest Pain', 'label' => 'Chest Pain', 'type' => 'radio'),
 			array('name' => 'heart_attack', 'drlabel' => 'Heart Attack', 'label' => 'Heart Attack', 'type' => 'radio'),
 			array('name' => 'heart_failure', 'drlabel' => 'Heart Failure', 'label' => 'Heart Failure', 'type' => 'radio'),
-			array('name' => 'abnormal_rhythm', 'drlabel' => 'Abnormal Rhythm', 'label' => 'Abnormal Rhythm', 'type' => 'radio')
+			array('name' => 'chest_pain', 'drlabel' => 'Chest Pain', 'label' => 'Chest Pain', 'type' => 'radio'),
+			array('name' => 'abnormal_rhythm', 'drlabel' => 'Abnormal Rhythm (a. fib.)', 'label' => 'Abnormal Rhythm (a. fib.)', 'type' => 'radio'),
+			array('name' => 'palpitations', 'drlabel' => 'Palpitations/Funny Heartbeat', 'label' => 'Palpitations/Funny Heartbeat', 'type' => 'radio'),
+			array('name' => 'anticoagulants', 'drlabel' => 'Use Blood Thinner (aspirin, Plavix, Coumadin, etc.)', 'label' => 'Use Blood Thinner (aspirin, Plavix, Coumadin, etc.)', 'type' => 'radio'),
+			array('name' => 'pacemaker', 'drlabel' => 'Pacemaker', 'label' => 'Pacemaker', 'type' => 'radio'),
+			array('name' => 'shortness_of_breath_prone', 'drlabel' => 'Shortness of breath when lying flat', 'label' => 'Shortness of breath when lying flat', 'type' => 'radio'),
+			array('name' => 'walking_calf_pain', 'drlabel' => 'Pain in calves when walking', 'label' => 'Pain in calves when walking', 'type' => 'radio')
 		)
 	),
 	array(
@@ -166,31 +191,37 @@ $sections = array(
 			array('name' => 'asthma', 'drlabel' => 'Asthma', 'label' => 'Asthma', 'type' => 'radio'),
 			array('name' => 'copd', 'drlabel' => 'COPD', 'label' => 'COPD', 'type' => 'radio'),
 			array('name' => 'smoking', 'drlabel' => 'Smoking', 'label' => 'Smoking', 'type' => 'radio'),
-			array('name' => 'cough', 'drlabel' => 'Cough', 'label' => 'Cough', 'type' => 'radio')
+			array('name' => 'cough', 'drlabel' => 'Cough', 'label' => 'Cough', 'type' => 'radio'),
+			array('name' => 'wheezing', 'drlabel' => 'Wheezing', 'label' => 'Wheezing', 'type' => 'radio'),
+			array('name' => 'shortness_of_breath_walking', 'drlabel' => 'Shortness of breath when walking', 'label' => 'Shortness of breath when walking', 'type' => 'radio')
 		)
 	),
 	array(
 		'name' => 'Gastrointestinal',
 		'fields' => array(
-			array('name' => 'stomach_pain', 'drlabel' => 'Stomach Pain', 'label' => 'Stomach Pain', 'type' => 'radio'),
+			array('name' => 'stomach_pain', 'drlabel' => 'Stomach Pain/Cramping', 'label' => 'Stomach Pain/Cramping', 'type' => 'radio'),
 			array('name' => 'diarrhea', 'drlabel' => 'Diarrhea', 'label' => 'Diarrhea', 'type' => 'radio'),
 			array('name' => 'constipation', 'drlabel' => 'Constipation', 'label' => 'Constipation', 'type' => 'radio'),
 			array('name' => 'nausea', 'drlabel' => 'Nausea', 'label' => 'Nausea', 'type' => 'radio'),
 			array('name' => 'vomiting', 'drlabel' => 'Vomiting', 'label' => 'Vomiting', 'type' => 'radio'),
-			array('name' => 'cramping', 'drlabel' => 'Cramping', 'label' => 'Cramping', 'type' => 'radio'),
-			array('name' => 'appetite_changes', 'drlabel' => 'Changes in Appetite', 'label' => 'Changes in Appetite', 'type' => 'radio')
+			array('name' => 'appetite_changes', 'drlabel' => 'Changes in Appetite', 'label' => 'Changes in Appetite', 'type' => 'radio'),
+			array('name' => 'blood_in_stool', 'drlabel' => 'Blood in Stool', 'label' => 'Blood in Stool', 'type' => 'radio'),
+			array('name' => 'heartburn', 'drlabel' => 'Heartburn', 'label' => 'Heartburn', 'type' => 'radio')
 		)
 	),
 	array(
 		'name' => 'Immune System',
 		'fields' => array(
-			array('name' => 'abnormal_lymph_nodes', 'drlabel' => 'Abnormal Lymph Nodes', 'label' => 'Abnormal Lymph Nodes', 'type' => 'radio'),
+			array('name' => 'abnormal_lymph_nodes', 'drlabel' => 'Abnormal or Large Lymph Nodes', 'label' => 'Abnormal or Large Lymph Nodes', 'type' => 'radio'),
 			array('name' => 'rheumatoid_arthritis', 'drlabel' => 'Rheumatoid Arthritis', 'label' => 'Rheumatoid Arthritis', 'type' => 'radio'),
 			array('name' => 'lupus', 'drlabel' => 'Lupus', 'label' => 'Lupus', 'type' => 'radio'),
 			array('name' => 'sjogrens', 'drlabel' => 'Sjorgren\'s', 'label' => 'Sjorgren\'s', 'type' => 'radio'),
 			array('name' => 'wegeners', 'drlabel' => 'Wegener\'s', 'label' => 'Wegener\'s', 'type' => 'radio'),
 			array('name' => 'psoriasis', 'drlabel' => 'Psoriasis', 'label' => 'Psoriasis', 'type' => 'radio'),
-			array('name' => 'osteoarthritis', 'drlabel' => 'Osteoarthritis', 'label' => 'Osteoarthritis', 'type' => 'radio')
+			array('name' => 'osteoarthritis', 'drlabel' => 'Osteoarthritis', 'label' => 'Osteoarthritis', 'type' => 'radio'),
+			array('name' => 'hiv', 'drlabel' => 'HIV', 'label' => 'HIV', 'type' => 'radio'),
+			array('name' => 'hepatitis_a', 'drlabel' => 'Hepatitis A', 'label' => 'Hepatitis A', 'type' => 'radio'),
+			array('name' => 'hepatitis_b', 'drlabel' => 'Hepatitis B', 'label' => 'Hepatitis B', 'type' => 'radio')
 		)
 	)
 );
