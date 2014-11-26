@@ -1,4 +1,5 @@
 <?php
+/* This file contains the form data required for all views and saves. */
 $form_name = 'Ashford Review of Symptoms Checks';
 $table_name = 'form_aec_ros';
 $sectionCols = 3;
