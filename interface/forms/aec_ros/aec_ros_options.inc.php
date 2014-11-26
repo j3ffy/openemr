@@ -135,10 +135,10 @@ $sections = array(
 	array(
 		'name' => 'Skin',
 		'fields' => array(
-			array('name' => 'headache', 'drlabel' => 'Headache', 'label' => 'Headache', 'type' => 'radio'),
-			array('name' => 'numbness', 'drlabel' => 'Numbness', 'label' => 'Numbness', 'type' => 'radio'),
-			array('name' => 'weakness', 'drlabel' => 'Weakness', 'label' => 'Weakness', 'type' => 'radio'),
-			array('name' => 'walking_problems', 'drlabel' => 'Walking Problems', 'label' => 'Walking Problems', 'type' => 'radio'),
+			array('name' => 'skin_cancer', 'drlabel' => 'Skin Cancer', 'label' => 'Skin Cancer', 'type' => 'radio'),
+			array('name' => 'skin_lesion', 'drlabel' => 'Skin Lesion', 'label' => 'Skin Lesion', 'type' => 'radio'),
+			array('name' => 'dry_skin', 'drlabel' => 'Dry Skin', 'label' => 'Dry Skin', 'type' => 'radio'),
+			array('name' => 'bruise_easily', 'drlabel' => 'Easy Brusing', 'label' => 'Easy Brusing', 'type' => 'radio'),
 			array('name' => 'rashes', 'drlabel' => 'Rashes', 'label' => 'Rashes', 'type' => 'radio')
 		)
 	),
