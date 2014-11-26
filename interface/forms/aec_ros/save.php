@@ -11,6 +11,8 @@ require_once($GLOBALS['srcdir'].'/api.inc');
 require_once($GLOBALS['srcdir'].'/forms.inc');
 /* for formDataCore() */
 require_once($GLOBALS['srcdir'].'/formdata.inc.php');
+/* Variables/settings common to all views included here*/
+require_once("aec_ros_options.inc.php");
 
 /** CHANGE THIS - name of the database table associated with this form **/
 $table_name = 'form_aec_ros';
@@ -38,7 +40,12 @@ if ($GLOBALS['athletic_team']!='false') {
 }
 
 /* an array of all of the fields' names and their types. */
-$field_names = array('weight_loss' => 'radio','weight_gain' => 'radio','fatigue' => 'radio','sleep_problems' => 'radio','vision_changes' => 'radio','blurry_vision' => 'radio','wear_glasses' => 'radio','floaters' => 'radio','glaucoma' => 'radio','hearing_loss' => 'radio','ringing' => 'radio','roaring' => 'radio','dizziness' => 'radio','vertigo' => 'radio','ear_pain' => 'radio','ear_drainage' => 'radio','ear_surgery' => 'radio','ear_infections' => 'radio','allergies' => 'radio','congestion' => 'radio','stuffiness' => 'radio','sinus_pain' => 'radio','sinus_pressure' => 'radio','sinus_surgery' => 'radio','blocked_breathing' => 'radio','hoarseness' => 'radio','dryness' => 'radio','voice_fatigue' => 'radio','frequent_throat_clearing' => 'radio','increased_phlegm' => 'radio','post_nasal_drip' => 'radio','face_pain' => 'radio','face_numbness' => 'radio','twitching' => 'radio','face_weakness' => 'radio','lopsided' => 'radio','neck_pain' => 'radio','mass' => 'radio','lump' => 'radio','goiter' => 'radio','spine_surgery' => 'radio','decreased_mobility' => 'radio','noisy_breathing' => 'radio','headache' => 'radio','numbness' => 'radio','weakness' => 'radio','walking_problems' => 'radio','chest_pain' => 'radio','heart_attack' => 'radio','heart_failure' => 'radio','abnormal_rhythm' => 'radio','breathing_changes' => 'radio','asthma' => 'radio','copd' => 'radio','smoking' => 'radio','cough' => 'radio','stomach_pain' => 'radio','diarrhea' => 'radio','constipation' => 'radio','nausea' => 'radio','vomiting' => 'radio','cramping' => 'radio','appetite_changes' => 'radio','abnormal_lymph_nodes' => 'radio','rheumatoid_arthritis' => 'radio','lupus' => 'radio','sjogrens' => 'radio','wegeners' => 'radio','psoriasis' => 'radio','osteoarthritis' => 'radio');
+$field_names = array();
+foreach($sections as $section) {
+	foreach($section['fields'] as $field) {
+		$field_names[$field['name']] = $field_names[$field['type']];
+	}
+}
 
 /* get each field from $_POST[], storing them into $field_names associated with their names. */
 foreach($field_names as $key=>$val)
