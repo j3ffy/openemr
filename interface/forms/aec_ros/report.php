@@ -29,51 +29,25 @@ function aec_ros_report( $pid, $encounter, $cols, $id) {
 	$count = 0;
 
 /* an array of the lists the fields may draw on. */
-    $data = formFetch($table_name, $id);
-    if ($data) {
-
-        echo '<table><tr>';
-
-        foreach($data as $key => $value) {
-
-            if ($key == 'id' || $key == 'pid' || $key == 'user' ||
-                $key == 'groupname' || $key == 'authorized' ||
-                $key == 'activity' || $key == 'date' || 
-                $value == '' || $value == '0000-00-00 00:00:00' ||
-                $value == "N/A")
-            {
-                /* skip built-in fields and "blank data". */
-	        continue;
-            }
-
-            /* display 'yes' instead of 'on'. */
-            if ($value == 'on') {
-                $value = 'yes';
-            }
-			
-			/* remove the time-of-day from the 'date' fields. */
-			if ($field_names[$key] == 'date') {
-				if ($value != '') {
-					$dateparts = split(' ', $value);
-					$value = $dateparts[0];
+	$data = formFetch($table_name, $id);
+	if ($data) {
+		foreach($sections as $section) {
+			$count = 0;
+			echo '<span class="title">'.$section['name'].'</span>' . PHP_EOL;
+			echo '<table><tr>';
+			foreach($section['fields'] as $field) {
+				if(array_key_exists($field['name'], $data)) {
+					echo "<td><span class='bold'>". xl($field['drlabel']) . ": </span><span class=text>" . xl($data[$field['name']]) . "</span></td>";
+					$count++;
+					if ($count == $cols) {
+						$count = 0;
+						echo '</tr><tr>' . PHP_EOL;
+					}
 				}
 			}
-			
-			if(array_key_exists($key, $drLabelMap)) {
-				$key = $drLabelMap[$key];
-			} else {
-				$key = ucwords(str_replace("_"," ",$key));
-			}
-
-	    echo "<td><span class='bold'>". xl($key) . ": </span><span class=text>" . xl($value) . "</span></td>";;
-            $count++;
-            if ($count == $cols) {
-                $count = 0;
-                echo '</tr><tr>' . PHP_EOL;
-            }
-        }
-    }
-    echo '</tr></table><hr>';
+			echo '</tr></table><hr>';
+		}
+	}
 }
 ?>
 
