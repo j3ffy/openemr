@@ -4,9 +4,9 @@
 
 
 From: {SENDER_NAME}
-      Your Company Name                             Phone: 222-333-4444
-      Your Company Address                          Fax:   555-666-7777
-      Your City, State Zip
+      Ashford Ear Clinic                            Phone: 706-248-6860
+      1000 Hawthorne Avenue Suite K                 Fax:   706-248-6142
+      Athens, GA 30606
 
 To:   {RECIPIENT_NAME}
 Fax:  {RECIPIENT_FAX}
