@@ -391,7 +391,7 @@ div.section {
 </style>
 
 <style type="text/css">@import url(../../library/dynarch_calendar.css);</style>
-
+<link rel="stylesheet" href="../../library/css/jquery-ui-1.8.21.custom.css" type='text/css'>
 <script type="text/javascript" src="../../library/topdialog.js"></script>
 <script type="text/javascript" src="../../library/dialog.js"></script>
 <script type="text/javascript" src="../../library/textformat.js"></script>
@@ -399,6 +399,7 @@ div.section {
 <?php include_once("{$GLOBALS['srcdir']}/dynarch_calendar_en.inc.php"); ?>
 <script type="text/javascript" src="../../library/dynarch_calendar_setup.js"></script>
 <script type="text/javascript" src="../../library/js/jquery-1.2.2.min.js"></script>
+<script type="text/javascript" src="../../library/js/jquery-ui-1.8.21.custom.js"></script>
 
 <script language="JavaScript">
 
@@ -672,14 +673,14 @@ while ($urow = sqlFetchArray($ures)) {
   <tr>
    <td class='itemtitle' nowrap><?php xl('To','e'); ?></td>
    <td>
-    <input type='text' size='10' name='form_to' style='width:100%'
+    <input type='text' size='10' name='form_to' id="fax-recipient" style='width:100%'
      title='Type the recipient name here' />
    </td>
   </tr>
   <tr>
    <td class='itemtitle' nowrap><?php xl('Fax','e'); ?></td>
    <td>
-    <input type='text' size='10' name='form_fax' style='width:100%'
+    <input type='text' size='10' name='form_fax' id="fax-number" style='width:100%'
      title='The fax phone number to send this to' />
    </td>
   </tr>
@@ -754,6 +755,19 @@ foreach ($jpgarray as $jfnamebase => $jfname) {
 
 <script language='JavaScript'>
  Calendar.setup({inputField:"form_docdate", ifFormat:"%Y-%m-%d", button:"img_docdate"});
+ 
+ //fax number autocomplete
+	$('#fax-recipient').autocomplete({
+		source: "fax_autocomplete.php",
+		minLength: 2,
+		select: function(event, ui) {
+			var recipientName = ui.item.value;
+			var faxNumber = ui.item.id;
+			$('#fax-recipient').val(recipientName);
+			$('#fax-number').val(faxNumber);
+			return false;
+		}
+	});
 </script>
 
 </body>
