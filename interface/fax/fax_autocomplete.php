@@ -35,7 +35,13 @@ if ($_GET['term']) {
 	if(!empty($res)) {
 		while ($row = sqlFetchArray($res)) {
 			$id = $row['fax'];
-			$value = $label = $row['fname'] . ' ' . $row['mname'] . ' ' . $row['lname'];
+			$displayName = $row['fname'] . ' ';
+			if(strlen($row['mname'])) {
+				$displayName .= $row['mname'] . ' ';
+			}
+			$displayName .= $row['lname'];
+			$displayName = trim($displayName);
+			$value = $label = $displayName;
 			if(strlen($row['organization'])) {
 				$label .= ' - '.$row['organization'];
 			}
@@ -44,6 +50,6 @@ if ($_GET['term']) {
 	}
 	$return = json_encode($searchResults);
 	header('Content-type: application/javascript');
-	return $return;
+	echo $return;
 }
 ?>
