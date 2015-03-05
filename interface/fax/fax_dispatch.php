@@ -252,6 +252,7 @@ if ($_POST['form_save']) {
     $cpstring = str_replace('{MESSAGE}'       , $form_message , $cpstring);
     fwrite($tmph, $cpstring);
     fclose($tmph);
+	error_log("cd $webserver_root/custom; " . $GLOBALS['hylafax_enscript'] . " -o $tmpfn2 $tmpfn1");
     $tmp0 = exec("cd $webserver_root/custom; " . $GLOBALS['hylafax_enscript'] .
       " -o $tmpfn2 $tmpfn1", $tmp1, $tmp2);
     if ($tmp2) {
@@ -261,6 +262,7 @@ if ($_POST['form_save']) {
 
     // Send the fax as the cover page followed by the selected pages.
     $info_msg .= mergeTiffs();
+	error_log("sendfax -A -n $form_finemode -d " . escapeshellarg($form_fax) . " $tmpfn2 '$faxcache/temp.tif'");
     $tmp0 = exec("sendfax -A -n $form_finemode -d " .
       escapeshellarg($form_fax) . " $tmpfn2 '$faxcache/temp.tif'",
       $tmp1, $tmp2);
@@ -343,7 +345,7 @@ if (! is_dir($faxcache)) {
     // convert's default density for PDF-to-TIFF conversion is 72 dpi which is
     // not very good, so we upgrade it to "fine mode" fax quality.  It's really
     // better and faster if the scanner produces TIFFs instead of PDFs.
-    $tmp0 = exec("convert -density 203x196 '$filepath' '$faxcache/deleteme.tif'", $tmp1, $tmp2);
+    $tmp0 = exec("convert -density 203x196 -monochrome '$filepath' '$faxcache/deleteme.tif'", $tmp1, $tmp2);
     if ($tmp2) die("convert returned $tmp2: $tmp0");
     $tmp0 = exec("cd '$faxcache'; tiffsplit 'deleteme.tif'; rm -f 'deleteme.tif'", $tmp1, $tmp2);
     if ($tmp2) die("tiffsplit/rm returned $tmp2: $tmp0");
